@@ -1,0 +1,141 @@
+.countdown-cta {
+    height:100%;
+    position:relative;
+
+    .hand {
+        position:absolute;
+        top:-100px;
+        left:-80px;
+        width:50%;
+        transform:rotate(-20deg);
+
+    }
+    .countdown {
+        position:absolute;
+        top:10%;
+        right:0;
+        //background-color:limegreen;
+        width:55%;
+        
+
+        img {
+            display:none;
+            //TODO
+        }
+        section {
+            
+            &:last-of-type {
+                margin-top:30px;
+                margin-left:120px;
+            }
+            p {
+                font-family:'Anton';
+                display:inline-block;
+                vertical-align: top;
+                position:relative;
+                
+                &:first-of-type {
+                    margin-right:100px;
+                }
+                &:nth-last-of-type(3) {
+                    .measure {
+                        margin-top:30px;
+                    }
+                }
+                .number {
+                    font-size:170px;
+                    margin-right:20px;
+                }
+                .measure {
+                    font-size:40px;
+                    text-transform:uppercase;
+                    position:absolute;
+                    top:0;
+                }
+                .vertical {
+                    writing-mode: vertical-lr;
+                }
+            }
+        }
+    }
+    .cta {
+        position:absolute;
+        left:15%;
+        top:500px;
+
+        p {
+            font-family:'Cairo';
+            font-size:26px;
+            width:415px;
+            line-height:30px;
+
+        }
+        form {
+
+            input {
+            
+                &:nth-of-type(-n + 2) {
+                    display:block;
+                    font-family:'Cairo';
+                    font-size:26px;
+                    border:none;
+                    border-bottom:solid 2px #000;
+                    margin-top:10px;
+                }
+            }
+            .name {
+                width:415px;
+            }
+            .contact {
+                width:325px;
+            }
+            .submit {
+                display:block;
+                position:relative;
+                top:65px;
+                left:350px;
+                width:269px;
+                height:72px;
+                border:solid 3px $ccb-red;
+                font-size:36px;
+                font-family:'Anton';
+                color:$ccb-red;
+                background-color: white;
+            }
+        }
+    }
+    .keep-an-eye-out {
+        position:absolute;
+        top:720px;
+        right:0;
+        width:52%;
+
+        div {
+            position:absolute;
+            right:0;
+            display:block;
+            height:150px;
+            width:82%;
+            
+            &:first-of-type {
+                font-size:96px;
+                font-family:'Anton';
+                text-transform:uppercase;
+                line-height:180px;
+                padding:0 50px;
+            }
+            &:nth-of-type(2) {
+                height:60px;
+                top:150px;
+                width:100%;
+
+            }
+            &:last-of-type {
+                height:100px;
+                top:210px;
+                width:22%;
+
+            }
+        }
+    }
+}

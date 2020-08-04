@@ -1,0 +1,16 @@
+@import '_reset';
+@import '_config';
+@import '_mixins';
+@import '_hero_section';
+@import '_countdown_cta';
+@import '_promo_video';
+
+.blue {
+    background-color: $ccb-blue;
+}
+.dark-blue {
+    background-color: $ccb-dark-blue;
+}
+.white {
+    background-color: #fff;
+}

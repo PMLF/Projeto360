@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+* {
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+html {
+  position: relative;
+  height: 100%; }
+
+strong {
+  font-weight: 700; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+em {
+  font-style: italic; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: 0;
+  outline: none; }
+
+button {
+  -webkit-appearance: none; }
+
+main {
+  transition: all .4s ease-out;
+  display: block;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  height: 100%; }
+
+* {
+  outline: 0;
+  box-sizing: border-box; }
+
+.hero {
+  height: 80%;
+  z-index: 1; }
+  .hero .top-right-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 120px;
+    width: 16%;
+    opacity: 0.65; }
+  .hero .bust {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    opacity: 90%;
+    z-index: -1; }
+  .hero .wave {
+    display: none; }
+  .hero .top-left-div {
+    position: absolute;
+    left: 0;
+    top: 180px;
+    height: 400px;
+    width: 30%; }
+  .hero .behind-title {
+    position: absolute;
+    left: 10%;
+    z-index: 1; }
+  .hero .small {
+    width: 20%;
+    height: 80px;
+    top: 320px; }
+  .hero .mid {
+    width: 40%;
+    height: 240px;
+    top: 380px; }
+  .hero .large {
+    width: 90%;
+    height: calc(100% - 600px);
+    top: 540px;
+    z-index: -1; }
+  .hero .main-title {
+    position: absolute;
+    top: 250px;
+    left: 12%;
+    font-family: 'Anton';
+    font-size: 120px;
+    line-height: 150px;
+    text-transform: uppercase;
+    z-index: 2; }
+    .hero .main-title span {
+      display: block; }
+  .hero .description {
+    font-family: 'Cairo';
+    font-size: 24px;
+    line-height: 30px;
+    position: absolute;
+    top: 730px;
+    right: 10%;
+    z-index: 1; }
+
+.countdown-cta {
+  height: 100%;
+  position: relative; }
+  .countdown-cta .hand {
+    position: absolute;
+    top: -100px;
+    left: -80px;
+    width: 50%;
+    transform: rotate(-20deg); }
+  .countdown-cta .countdown {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 55%; }
+    .countdown-cta .countdown img {
+      display: none; }
+    .countdown-cta .countdown section:last-of-type {
+      margin-top: 30px;
+      margin-left: 120px; }
+    .countdown-cta .countdown section p {
+      font-family: 'Anton';
+      display: inline-block;
+      vertical-align: top;
+      position: relative; }
+      .countdown-cta .countdown section p:first-of-type {
+        margin-right: 100px; }
+      .countdown-cta .countdown section p:nth-last-of-type(3) .measure {
+        margin-top: 30px; }
+      .countdown-cta .countdown section p .number {
+        font-size: 170px;
+        margin-right: 20px; }
+      .countdown-cta .countdown section p .measure {
+        font-size: 40px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0; }
+      .countdown-cta .countdown section p .vertical {
+        writing-mode: vertical-lr; }
+  .countdown-cta .cta {
+    position: absolute;
+    left: 15%;
+    top: 500px; }
+    .countdown-cta .cta p {
+      font-family: 'Cairo';
+      font-size: 26px;
+      width: 415px;
+      line-height: 30px; }
+    .countdown-cta .cta form input:nth-of-type(-n + 2) {
+      display: block;
+      font-family: 'Cairo';
+      font-size: 26px;
+      border: none;
+      border-bottom: solid 2px #000;
+      margin-top: 10px; }
+    .countdown-cta .cta form .name {
+      width: 415px; }
+    .countdown-cta .cta form .contact {
+      width: 325px; }
+    .countdown-cta .cta form .submit {
+      display: block;
+      position: relative;
+      top: 65px;
+      left: 350px;
+      width: 269px;
+      height: 72px;
+      border: solid 3px #C7161D;
+      font-size: 36px;
+      font-family: 'Anton';
+      color: #C7161D;
+      background-color: white; }
+  .countdown-cta .keep-an-eye-out {
+    position: absolute;
+    top: 720px;
+    right: 0;
+    width: 52%; }
+    .countdown-cta .keep-an-eye-out div {
+      position: absolute;
+      right: 0;
+      display: block;
+      height: 150px;
+      width: 82%; }
+      .countdown-cta .keep-an-eye-out div:first-of-type {
+        font-size: 96px;
+        font-family: 'Anton';
+        text-transform: uppercase;
+        line-height: 180px;
+        padding: 0 50px; }
+      .countdown-cta .keep-an-eye-out div:nth-of-type(2) {
+        height: 60px;
+        top: 150px;
+        width: 100%; }
+      .countdown-cta .keep-an-eye-out div:last-of-type {
+        height: 100px;
+        top: 210px;
+        width: 22%; }
+
+.promo-video {
+  position: relative;
+  top: -100px;
+  margin-bottom: 50px; }
+
+.blue {
+  background-color: #3BC0C7; }
+
+.dark-blue {
+  background-color: #126569; }
+
+.white {
+  background-color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
