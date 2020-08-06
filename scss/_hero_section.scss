@@ -37,10 +37,10 @@
             transform:translateY(-10%);
             -webkit-mask-image: url('/images/mask.png');
             -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: 200px;
+            -webkit-mask-size: 300px;
             mask-image: url('/images/mask.png');
             mask-repeat: no-repeat;
-            mask-size: 200px;
+            mask-size: 300px;
             pointer-events: none;
             @include mq(0,1200px){
                 display:none;
@@ -134,9 +134,13 @@
         z-index:2;
         span {
             display:block;
-        }
-        &:hover {
-            color:$ccb-red;
+            
+            &:first-of-type {
+                width:25%;
+            }
+            &:nth-of-type(2) {
+                width:75%;
+            }
         }
         @include mq(0,1330px){
             font-size:104px;
@@ -159,7 +163,7 @@
     .description {
         font-family:'Cairo';
         font-size:32px;
-        line-height:30px;
+        line-height:36px;
         position:absolute;
         top:730px;
         right:10%;

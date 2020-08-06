@@ -123,10 +123,10 @@ main {
       transform: translateY(-10%);
       -webkit-mask-image: url("/images/mask.png");
       -webkit-mask-repeat: no-repeat;
-      -webkit-mask-size: 200px;
+      -webkit-mask-size: 300px;
       mask-image: url("/images/mask.png");
       mask-repeat: no-repeat;
-      mask-size: 200px;
+      mask-size: 300px;
       pointer-events: none; }
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .bust .masked {
@@ -212,8 +212,10 @@ main {
     z-index: 2; }
     .hero .main-title span {
       display: block; }
-    .hero .main-title:hover {
-      color: #C7161D; }
+      .hero .main-title span:first-of-type {
+        width: 25%; }
+      .hero .main-title span:nth-of-type(2) {
+        width: 75%; }
     @media (min-width: 0) and (max-width: 1330px) {
       .hero .main-title {
         font-size: 104px;
@@ -234,7 +236,7 @@ main {
   .hero .description {
     font-family: 'Cairo';
     font-size: 32px;
-    line-height: 30px;
+    line-height: 36px;
     position: absolute;
     top: 730px;
     right: 10%;
@@ -317,6 +319,9 @@ main {
       .countdown-cta .countdown section p .number {
         font-size: 170px;
         margin-right: 20px; }
+        .countdown-cta .countdown section p .number:hover {
+          color: #C7161D;
+          transition: color 0.5s; }
         @media (min-width: 0) and (max-width: 1200px) {
           .countdown-cta .countdown section p .number {
             font-size: 130px; } }
@@ -329,6 +334,9 @@ main {
         text-transform: uppercase;
         position: absolute;
         top: 0; }
+        .countdown-cta .countdown section p .measure:hover {
+          color: #3BC0C7;
+          transition: color 0.5s; }
         @media (min-width: 0) and (max-width: 900px) {
           .countdown-cta .countdown section p .measure {
             font-size: 26px;

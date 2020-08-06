@@ -79,6 +79,10 @@
                 .number {
                     font-size:170px;
                     margin-right:20px;
+                    &:hover {
+                        color:$ccb-red;
+                        transition:color 0.5s;
+                    }
                     @include mq(0,1200px){
                         font-size:130px;
                     }
@@ -92,6 +96,10 @@
                     text-transform:uppercase;
                     position:absolute;
                     top:0;
+                    &:hover {
+                        color:$ccb-blue;
+                        transition:color 0.5s;
+                    }
                     @include mq(0,900px){
                         font-size:26px;
                         writing-mode: vertical-lr;
