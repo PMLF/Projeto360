@@ -2,8 +2,8 @@
 <html lang="pt">
 <head> 
 	<meta charset="utf-8">
-	<title></title>
-	<meta name="mobile-web-app-capable" content="yes">
+	<title>CCB - A Chave da Cidade Aberta</title>
+	<meta name="mobile-web-app-capable" content="no">
 	<meta name="format-detection" content="telephone=no" />
 	<!--Generic meta-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, initial-scale = 1.0, shrink-to-fit=no, user-scalable=no">
@@ -16,19 +16,31 @@
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<!--favicon-->
-	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+	<link rel="shortcut icon" href="images/favicon-ccb.png" />
+	<link rel="icon" type="image/ico" href="images/favicon-ccb.png" />
 	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo&display=swap" rel="stylesheet">
 	<!--Links-->
 	<link rel="stylesheet" href="css/main.css">
+	<!--jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
+	<section class="corner-logo">
+		<img src="images/ccb-logo.png" alt="CCB logo">
+		<div class="top-line red-line"></div>
+		<div class="corner-line red-line"></div>
+		<div class="left-line red-line"></div>
+	</section>
+
 	<section class="hero">
 		<div class="top-right-div dark-blue"></div>
-		<img class="bust" src="images/bust_cut.jpg" alt="Distorted bust statue">
-		<img class="wave" src="images/wave.jpg" alt="Sound wave">
+		<!--img class="bust" src="images/bust_cut.jpg" alt="Distorted bust statue"-->
+		<img class="wave" src="images/wave.png" alt="Sound waves">
+		<div class="bust">
+			<img class="masked" src="images/ccb-outside.jpg" alt="Hidden secret">
+		</div>
 		<div class="top-left-div blue"></div>
 		<div class="behind-title small white"></div>
 		<div class="behind-title mid white"></div>
@@ -45,26 +57,26 @@
 	</section>
 
 	<section class="countdown-cta">
-		<img class="hand" src="images/hand.gif" alt="Hand .gif">
+		<img class="hand" src="images/hand-mini.gif" alt="Hand .gif">
 		<div class="countdown">
-			<img src="images/wave.jpg" alt="Sound wave">
+			<img class="wave" src="images/wave.png" alt="Sound wave">
 			<section>
 				<p>
-					<span class="number days">05</span>
+					<span class="number days"></span>
 					<span class="measure">Dias</span>
 				</p>
 				<p>
-					<span class="number hours">12</span>
+					<span class="number hours"></span>
 					<span class="measure vertical">Horas</span>
 				</p>
 			</section>
 			<section>
 				<p>
-					<span class="number minutes">55</span>
+					<span class="number minutes"></span>
 					<span class="measure vertical">Minutos</span>
 				</p>
 				<p>
-					<span class="number seconds">34</span>
+					<span class="number seconds"></span>
 					<span class="measure">Segundos</span>
 				</p>
 			</section>
@@ -73,11 +85,12 @@
 		</div>
 		<div class="cta">
 			<p>Deixa-nos o teu contacto para seres o primeiro a receber as novidades.</p>
-			<form action="post">
+			<form>
 				<input type="text" name="name" class="name" placeholder="Nome">
 				<input type="text" name="contact" class="contact" placeholder="Email/Telefone">
-				<input type="submit" value="ENVIAR" class="submit">
+				<input type="button" value="ENVIAR" class="submit">
 			</form>
+			<img class="wave" src="images/wave.png" alt="Sound waves">
 		</div>
 		<div class="keep-an-eye-out">
 			<div class="blue">Fica atento!</div>
@@ -87,8 +100,14 @@
 	</section>
 
 	<section class="promo-video">
-		<iframe width="100%" height="877" src="https://www.youtube.com/embed/TUNRP-RoZUI?controls=0&autoplay=1" frameborder="0" allow="autoplay;"></iframe>
+		<!--<iframe width="100%" height="877" src="https://www.youtube.com/embed/TUNRP-RoZUI?autoplay=1&mute=1" frameborder="0" allow="autoplay;"></iframe>-->
+		Vídeo CCB e embaixadores
 	</section>
 
+	<div class="pointer"></div>
+
+	<script src="js\pointer.js"></script>
+	<script src="js\docReady.js"></script>
+	<script src="js\cta.js"></script>
 </body>
 </html>

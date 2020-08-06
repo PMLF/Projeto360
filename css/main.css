@@ -101,34 +101,106 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    width: 70%;
-    opacity: 90%;
-    z-index: -1; }
+    width: 74%;
+    opacity: 0.9;
+    z-index: -1;
+    height: 70%;
+    background: url("/images/bust_cut.jpg") no-repeat;
+    background-size: 100% auto; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .bust {
+        width: 80%;
+        right: -10%; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .bust {
+        width: 90%;
+        right: -24%; } }
+    .hero .bust .masked {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      transform: translateY(-10%);
+      -webkit-mask-image: url("/images/mask.png");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: 200px;
+      mask-image: url("/images/mask.png");
+      mask-repeat: no-repeat;
+      mask-size: 200px;
+      pointer-events: none; }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .hero .bust .masked {
+          display: none; } }
   .hero .wave {
-    display: none; }
+    position: absolute;
+    top: -5%;
+    right: 0;
+    width: 74%;
+    height: 50%; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .wave {
+        width: 80%;
+        right: -10%; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .wave {
+        width: 90%;
+        right: -24%; } }
   .hero .top-left-div {
     position: absolute;
     left: 0;
     top: 180px;
     height: 400px;
-    width: 30%; }
+    width: 26%; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .top-left-div {
+        width: 30%; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .top-left-div {
+        width: 34%; } }
   .hero .behind-title {
     position: absolute;
     left: 10%;
     z-index: 1; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .behind-title {
+        left: 12%; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .behind-title {
+        left: 14%; } }
   .hero .small {
-    width: 20%;
+    width: 16%;
     height: 80px;
     top: 320px; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .small {
+        top: 270px;
+        height: 50px;
+        width: calc(18% + 1px); } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .small {
+        width: calc(20% + 1px); } }
   .hero .mid {
-    width: 40%;
+    width: 38%;
     height: 240px;
     top: 380px; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .mid {
+        top: 320px;
+        height: 200px;
+        width: 38%; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .mid {
+        width: 48%; } }
   .hero .large {
     width: 90%;
     height: calc(100% - 600px);
     top: 540px;
-    z-index: -1; }
+    z-index: 0; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .large {
+        top: 518px;
+        height: calc(100% - 600px);
+        width: 88%; } }
   .hero .main-title {
     position: absolute;
     top: 250px;
@@ -140,34 +212,93 @@ main {
     z-index: 2; }
     .hero .main-title span {
       display: block; }
+    .hero .main-title:hover {
+      color: #C7161D; }
+    @media (min-width: 0) and (max-width: 1330px) {
+      .hero .main-title {
+        font-size: 104px;
+        line-height: 130px; } }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .main-title {
+        font-size: 90px;
+        line-height: 110px;
+        top: 200px;
+        margin-left: 40px; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .main-title {
+        font-size: 80px;
+        line-height: 100px;
+        margin-left: 10px;
+        top: 230px;
+        left: 16%; } }
   .hero .description {
     font-family: 'Cairo';
-    font-size: 24px;
+    font-size: 32px;
     line-height: 30px;
     position: absolute;
     top: 730px;
     right: 10%;
     z-index: 1; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .hero .description {
+        right: 5%;
+        top: 55vh; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .description {
+        top: 620px;
+        font-size: 26px; } }
 
 .countdown-cta {
-  height: 100%;
+  height: 120%;
   position: relative; }
+  @media (min-width: 0) and (max-width: 1200px) {
+    .countdown-cta {
+      height: 80%; } }
   .countdown-cta .hand {
     position: absolute;
-    top: -100px;
-    left: -80px;
+    left: -120px;
+    top: -8vh;
     width: 50%;
     transform: rotate(-20deg); }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .countdown-cta .hand {
+        width: 54%;
+        top: -220px;
+        left: -80px; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .countdown-cta .hand {
+        width: 60%;
+        top: -220px;
+        left: -60px; } }
   .countdown-cta .countdown {
     position: absolute;
-    top: 10%;
+    top: 16%;
     right: 0;
     width: 55%; }
-    .countdown-cta .countdown img {
-      display: none; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .countdown-cta .countdown {
+        top: 0;
+        right: 5%; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .countdown-cta .countdown {
+        top: -5%;
+        width: 48%; } }
+    .countdown-cta .countdown .wave {
+      position: absolute;
+      top: -10vh;
+      height: 60vh;
+      opacity: 0.4; }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .countdown-cta .countdown .wave {
+          top: -6vh;
+          height: 40vh; } }
     .countdown-cta .countdown section:last-of-type {
       margin-top: 30px;
       margin-left: 120px; }
+      @media (min-width: 0) and (max-width: 900px) {
+        .countdown-cta .countdown section:last-of-type {
+          margin-left: 40px;
+          margin-top: 12px; } }
     .countdown-cta .countdown section p {
       font-family: 'Anton';
       display: inline-block;
@@ -175,22 +306,50 @@ main {
       position: relative; }
       .countdown-cta .countdown section p:first-of-type {
         margin-right: 100px; }
+        @media (min-width: 0) and (max-width: 1200px) {
+          .countdown-cta .countdown section p:first-of-type {
+            margin-right: 80px; } }
+        @media (min-width: 0) and (max-width: 900px) {
+          .countdown-cta .countdown section p:first-of-type {
+            margin-right: 60px; } }
       .countdown-cta .countdown section p:nth-last-of-type(3) .measure {
         margin-top: 30px; }
       .countdown-cta .countdown section p .number {
         font-size: 170px;
         margin-right: 20px; }
+        @media (min-width: 0) and (max-width: 1200px) {
+          .countdown-cta .countdown section p .number {
+            font-size: 130px; } }
+        @media (min-width: 0) and (max-width: 900px) {
+          .countdown-cta .countdown section p .number {
+            font-size: 112px;
+            margin-right: 8px; } }
       .countdown-cta .countdown section p .measure {
         font-size: 40px;
         text-transform: uppercase;
         position: absolute;
         top: 0; }
+        @media (min-width: 0) and (max-width: 900px) {
+          .countdown-cta .countdown section p .measure {
+            font-size: 26px;
+            writing-mode: vertical-lr; } }
+        @media (min-width: 0) and (max-width: 1200px) {
+          .countdown-cta .countdown section p .measure {
+            font-size: 32px;
+            writing-mode: vertical-lr; } }
       .countdown-cta .countdown section p .vertical {
         writing-mode: vertical-lr; }
   .countdown-cta .cta {
     position: absolute;
     left: 15%;
-    top: 500px; }
+    top: 60vh; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .countdown-cta .cta {
+        top: 370px;
+        left: 18%; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .countdown-cta .cta {
+        top: 320px; } }
     .countdown-cta .cta p {
       font-family: 'Cairo';
       font-size: 26px;
@@ -214,16 +373,43 @@ main {
       left: 350px;
       width: 269px;
       height: 72px;
-      border: solid 3px #C7161D;
+      border: solid 4px #C7161D;
       font-size: 36px;
       font-family: 'Anton';
       color: #C7161D;
-      background-color: white; }
+      background-color: white;
+      -webkit-box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.4);
+      box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.4); }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .countdown-cta .cta form .submit {
+          top: -20px;
+          left: 380px; } }
+      .countdown-cta .cta form .submit:hover {
+        background-color: #F0F0F0;
+        transform: scale(1.05);
+        transition: 0.2s; }
+      .countdown-cta .cta form .submit:active {
+        transform: scale(0.95);
+        transition: 0.2s; }
+    .countdown-cta .cta .wave {
+      position: absolute;
+      top: 100px;
+      left: -700px;
+      height: 400px;
+      transform: rotate(180deg);
+      z-index: -1; }
   .countdown-cta .keep-an-eye-out {
     position: absolute;
-    top: 720px;
+    top: 86vh;
     right: 0;
     width: 52%; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .countdown-cta .keep-an-eye-out {
+        top: 60vh; } }
+    @media (min-width: 0) and (max-width: 900px) {
+      .countdown-cta .keep-an-eye-out {
+        width: 60%; } }
     .countdown-cta .keep-an-eye-out div {
       position: absolute;
       right: 0;
@@ -236,6 +422,10 @@ main {
         text-transform: uppercase;
         line-height: 180px;
         padding: 0 50px; }
+        @media (min-width: 0) and (max-width: 1200px) {
+          .countdown-cta .keep-an-eye-out div:first-of-type {
+            font-size: 60px;
+            line-height: 160px; } }
       .countdown-cta .keep-an-eye-out div:nth-of-type(2) {
         height: 60px;
         top: 150px;
@@ -246,9 +436,67 @@ main {
         width: 22%; }
 
 .promo-video {
-  position: relative;
-  top: -100px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  background-color: #3BC0C7;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-family: 'Anton';
+  font-size: 140px;
+  line-height: 150px;
+  padding: 360px 0;
+  color: white;
+  text-align: center; }
+  @media (min-width: 0) and (max-width: 900px) {
+    .promo-video {
+      font-size: 80px;
+      padding: 180px 0; } }
+
+.pointer {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-sizing: border-box;
+  z-index: 3; }
+
+body {
+  cursor: none; }
+
+.corner-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  z-index: 1; }
+  .corner-logo img {
+    width: 200px;
+    padding: 40px 50px; }
+  .corner-logo .red-line {
+    background-color: transparent;
+    border: solid 5px #C7161D;
+    position: absolute;
+    border-top: none;
+    border-left: none; }
+  .corner-logo .top-line {
+    top: 0;
+    left: 200px;
+    width: calc(90% - 180px);
+    height: 62px; }
+  .corner-logo .corner-line {
+    top: 57px;
+    left: 100px;
+    width: 100px;
+    height: 66px; }
+  .corner-logo .left-line {
+    top: 118px;
+    left: 0;
+    width: 100px;
+    height: 140vh; }
 
 .blue {
   background-color: #3BC0C7; }
@@ -258,5 +506,9 @@ main {
 
 .white {
   background-color: #fff; }
+
+body ::selection {
+  color: #cff;
+  background-color: #222; }
 
 /*# sourceMappingURL=main.css.map */

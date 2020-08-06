@@ -1,32 +1,60 @@
 .countdown-cta {
-    height:100%;
+    height:120%;
     position:relative;
+    @include mq(0,1200px){
+        height:80%;
+    }
 
     .hand {
         position:absolute;
-        top:-100px;
-        left:-80px;
+        left:-120px;
+        top:-8vh;
         width:50%;
         transform:rotate(-20deg);
-
+        @include mq(0,1200px){
+            width:54%;
+            top:-220px;
+            left:-80px;
+        }
+        @include mq(0,900px){
+            width:60%;
+            top:-220px;
+            left:-60px;
+        }
     }
     .countdown {
         position:absolute;
-        top:10%;
+        top:16%;
         right:0;
-        //background-color:limegreen;
         width:55%;
+        @include mq(0,1200px){
+            top:0;
+            right:5%;
+        }
+        @include mq(0,900px){
+            top:-5%;
+            width:48%;
+        }
         
-
-        img {
-            display:none;
-            //TODO
+        .wave {
+            position:absolute;
+            top:-10vh;
+            height:60vh;
+            opacity:0.4;
+            @include mq(0,1200px){
+                top:-6vh;
+                height:40vh;
+            }
         }
         section {
             
             &:last-of-type {
                 margin-top:30px;
                 margin-left:120px;
+                @include mq(0,900px){
+                    margin-left:40px;
+                    margin-top:12px;
+                }
             }
             p {
                 font-family:'Anton';
@@ -36,6 +64,12 @@
                 
                 &:first-of-type {
                     margin-right:100px;
+                    @include mq(0,1200px){
+                        margin-right:80px;
+                    }
+                    @include mq(0,900px){
+                        margin-right:60px;
+                    }
                 }
                 &:nth-last-of-type(3) {
                     .measure {
@@ -45,12 +79,27 @@
                 .number {
                     font-size:170px;
                     margin-right:20px;
+                    @include mq(0,1200px){
+                        font-size:130px;
+                    }
+                    @include mq(0,900px){
+                        font-size:112px;
+                        margin-right:8px;
+                    }
                 }
                 .measure {
                     font-size:40px;
                     text-transform:uppercase;
                     position:absolute;
                     top:0;
+                    @include mq(0,900px){
+                        font-size:26px;
+                        writing-mode: vertical-lr;
+                    }
+                    @include mq(0,1200px){
+                        font-size:32px;
+                        writing-mode: vertical-lr;
+                    }
                 }
                 .vertical {
                     writing-mode: vertical-lr;
@@ -61,8 +110,14 @@
     .cta {
         position:absolute;
         left:15%;
-        top:500px;
-
+        top:60vh;
+        @include mq(0,1200px){
+            top:370px;
+            left:18%;
+        }
+        @include mq(0,900px){
+            top:320px;
+        }
         p {
             font-family:'Cairo';
             font-size:26px;
@@ -71,7 +126,6 @@
 
         }
         form {
-
             input {
             
                 &:nth-of-type(-n + 2) {
@@ -96,20 +150,49 @@
                 left:350px;
                 width:269px;
                 height:72px;
-                border:solid 3px $ccb-red;
+                border:solid 4px $ccb-red;
                 font-size:36px;
                 font-family:'Anton';
                 color:$ccb-red;
                 background-color: white;
+                -webkit-box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
+                -moz-box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
+                box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
+                @include mq(0,1200px){
+                    top:-20px;
+                    left:380px;
+                }
+                &:hover {
+                    background-color:#F0F0F0;
+                    transform:scale(1.05);
+                    transition:0.2s;
+                }
+                &:active {
+                    transform:scale(0.95);
+                    transition:0.2s;
+                }
             }
+        }
+        .wave {
+            position: absolute;
+            top:100px;
+            left:-700px;
+            height:400px;
+            transform:rotate(180deg);
+            z-index:-1;
         }
     }
     .keep-an-eye-out {
         position:absolute;
-        top:720px;
+        top:86vh;
         right:0;
         width:52%;
-
+        @include mq(0,1200px){
+            top:60vh;
+        }
+        @include mq(0,900px){
+            width:60%;
+        }
         div {
             position:absolute;
             right:0;
@@ -123,6 +206,10 @@
                 text-transform:uppercase;
                 line-height:180px;
                 padding:0 50px;
+                @include mq(0,1200px){
+                    font-size:60px;
+                    line-height:160px;
+                }
             }
             &:nth-of-type(2) {
                 height:60px;
@@ -134,7 +221,6 @@
                 height:100px;
                 top:210px;
                 width:22%;
-
             }
         }
     }

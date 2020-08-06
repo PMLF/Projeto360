@@ -1,0 +1,39 @@
+.corner-logo {
+    position:absolute;
+    top:0;
+    left:0;
+    pointer-events:none;
+    width:100%;
+    z-index:1;
+
+    img {
+        width:200px;
+        padding:40px 50px;
+    }
+    .red-line {
+        background-color: transparent;
+        border:solid 5px $ccb-red;
+        position:absolute;
+        border-top:none;
+        border-left:none;
+    }
+    .top-line {
+        top:0;
+        left:200px;
+        width:calc(90% - 180px);
+        height:62px;
+    }
+    .corner-line {
+        top:57px;
+        left:100px;
+        width:100px;
+        height:66px;
+
+    }
+    .left-line {
+        top:118px;
+        left:0;
+        width:100px;
+        height:140vh;
+    }
+}
