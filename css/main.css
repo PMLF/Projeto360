@@ -120,7 +120,7 @@ main {
       top: 0;
       right: 0;
       width: 100%;
-      transform: translateY(-10%);
+      transform: translateY(-30%);
       -webkit-mask-image: url("/images/mask.png");
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-size: 300px;
@@ -445,19 +445,9 @@ main {
 
 .promo-video {
   margin-bottom: 50px;
-  background-color: #3BC0C7;
-  opacity: 0.5;
-  text-transform: uppercase;
-  font-family: 'Anton';
-  font-size: 140px;
-  line-height: 150px;
-  padding: 360px 0;
-  color: white;
-  text-align: center; }
-  @media (min-width: 0) and (max-width: 900px) {
-    .promo-video {
-      font-size: 80px;
-      padding: 180px 0; } }
+  height: 90%; }
+  .promo-video iframe {
+    height: 100%; }
 
 .pointer {
   position: fixed;
