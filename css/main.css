@@ -89,11 +89,10 @@ main {
 .hero {
   height: 80%;
   z-index: 1; }
-  .hero .top-right-div {
+  .hero .top-right-blue {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
     height: 120px;
     width: 16%;
     opacity: 0.65; }
@@ -107,20 +106,9 @@ main {
     height: 70%;
     background: url("/images/bust_cut.jpg") no-repeat;
     background-size: 100% auto; }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .hero .bust {
-        width: 80%;
-        right: -10%; } }
-    @media (min-width: 0) and (max-width: 900px) {
-      .hero .bust {
-        width: 90%;
-        right: -24%; } }
     .hero .bust .masked {
-      position: absolute;
-      top: 0;
-      right: 0;
       width: 100%;
-      transform: translateY(-30%);
+      transform: translateY(-90%);
       -webkit-mask-image: url("/images/mask.png");
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-size: 300px;
@@ -131,116 +119,104 @@ main {
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .bust .masked {
           display: none; } }
-  .hero .wave {
-    position: absolute;
-    top: -5%;
-    right: 0;
-    width: 74%;
-    height: 50%; }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .hero .wave {
-        width: 80%;
-        right: -10%; } }
-    @media (min-width: 0) and (max-width: 900px) {
-      .hero .wave {
-        width: 90%;
-        right: -24%; } }
-  .hero .top-left-div {
-    position: absolute;
-    left: 0;
-    top: 180px;
-    height: 400px;
-    width: 26%; }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .hero .top-left-div {
-        width: 30%; } }
-    @media (min-width: 0) and (max-width: 900px) {
-      .hero .top-left-div {
-        width: 34%; } }
-  .hero .behind-title {
-    position: absolute;
-    left: 10%;
-    z-index: 1; }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .hero .behind-title {
-        left: 12%; } }
-    @media (min-width: 0) and (max-width: 900px) {
-      .hero .behind-title {
-        left: 14%; } }
-  .hero .small {
-    width: 16%;
-    height: 80px;
-    top: 320px; }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .hero .small {
-        top: 270px;
-        height: 50px;
-        width: calc(18% + 1px); } }
-    @media (min-width: 0) and (max-width: 900px) {
-      .hero .small {
-        width: calc(20% + 1px); } }
-  .hero .mid {
-    width: 38%;
-    height: 240px;
-    top: 380px; }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .hero .mid {
-        top: 320px;
-        height: 200px;
-        width: 38%; } }
-    @media (min-width: 0) and (max-width: 900px) {
-      .hero .mid {
-        width: 48%; } }
-  .hero .large {
-    width: 90%;
-    height: calc(100% - 600px);
-    top: 540px;
-    z-index: 0; }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .hero .large {
-        top: 518px;
-        height: calc(100% - 600px);
-        width: 88%; } }
-  .hero .main-title {
-    position: absolute;
-    top: 250px;
-    left: 12%;
-    font-family: 'Anton';
-    font-size: 120px;
-    line-height: 150px;
-    text-transform: uppercase;
-    z-index: 2; }
-    .hero .main-title span {
-      display: block; }
-      .hero .main-title span:first-of-type {
-        width: 25%; }
-      .hero .main-title span:nth-of-type(2) {
-        width: 75%; }
-    @media (min-width: 0) and (max-width: 1330px) {
-      .hero .main-title {
-        font-size: 104px;
-        line-height: 130px; } }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .hero .main-title {
-        font-size: 90px;
-        line-height: 110px;
-        top: 200px;
-        margin-left: 40px; } }
-    @media (min-width: 0) and (max-width: 900px) {
-      .hero .main-title {
-        font-size: 80px;
-        line-height: 100px;
-        margin-left: 10px;
-        top: 230px;
-        left: 16%; } }
+    .hero .bust .wave {
+      margin-top: 20px;
+      width: 100%;
+      height: 70%; }
+  .hero .title {
+    margin-top: 180px; }
+    .hero .title .top-left-blue {
+      height: 400px;
+      width: 26%; }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .hero .title .top-left-blue {
+          width: 30%; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .hero .title .top-left-blue {
+          width: 34%; } }
+    .hero .title .behind-title {
+      position: absolute;
+      left: 10%;
+      z-index: 1; }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .hero .title .behind-title {
+          left: 12%; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .hero .title .behind-title {
+          left: 14%; } }
+    .hero .title .small {
+      width: 16%;
+      height: 60px;
+      top: 320px; }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .hero .title .small {
+          top: 270px;
+          height: 50px;
+          width: calc(18% + 1px); } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .hero .title .small {
+          width: calc(20% + 1px); } }
+    .hero .title .mid {
+      width: 38%;
+      height: 240px;
+      top: 380px; }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .hero .title .mid {
+          top: 320px;
+          height: 200px;
+          width: 38%; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .hero .title .mid {
+          width: 48%; } }
+    .hero .title .large {
+      width: 90%;
+      height: calc(100% - 600px);
+      top: 540px;
+      z-index: 0; }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .hero .title .large {
+          top: 518px;
+          height: calc(100% - 600px);
+          width: 88%; } }
+    .hero .title .title-text {
+      position: absolute;
+      top: 250px;
+      left: 12%;
+      font-family: 'Anton';
+      font-size: 120px;
+      line-height: 150px;
+      text-transform: uppercase;
+      z-index: 2; }
+      .hero .title .title-text span {
+        display: block; }
+        .hero .title .title-text span:first-of-type {
+          width: 25%; }
+        .hero .title .title-text span:nth-of-type(2) {
+          width: 75%; }
+      @media (min-width: 0) and (max-width: 1330px) {
+        .hero .title .title-text {
+          font-size: 104px;
+          line-height: 130px; } }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .hero .title .title-text {
+          font-size: 90px;
+          line-height: 110px;
+          top: 200px;
+          margin-left: 40px; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .hero .title .title-text {
+          font-size: 80px;
+          line-height: 100px;
+          margin-left: 10px;
+          top: 230px;
+          left: 16%; } }
   .hero .description {
+    float: right;
+    margin-top: 180px;
+    margin-right: 150px;
     font-family: 'Cairo';
     font-size: 32px;
-    line-height: 36px;
-    position: absolute;
-    top: 730px;
-    right: 10%;
-    z-index: 1; }
+    line-height: 36px; }
     @media (min-width: 0) and (max-width: 1200px) {
       .hero .description {
         right: 5%;
