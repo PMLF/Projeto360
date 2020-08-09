@@ -1,6 +1,5 @@
 .hero {
-    height:80%;
-    z-index:1;
+    height:65%;
 
     .top-right-blue {
         position:absolute;
@@ -91,13 +90,29 @@
         }
         .large {
             width:90%;
-            height:calc(100% - 600px);
+            height:20%;
             top:540px;
             z-index:0;
             @include mq(0,1200px){
                 top:518px;
                 height:calc(100% - 600px);
                 width:88%;
+            }
+            .description {
+                float:right;
+                margin-top:180px;
+                margin-right:150px;
+                font-family:'Cairo';
+                font-size:32px;
+                line-height:36px;
+                @include mq(0,1200px){
+                    right:5%;
+                    top:55vh;
+                }
+                @include mq(0,900px){
+                    top:620px;
+                    font-size:26px;
+                }
             }
         }
         .title-text {
@@ -136,22 +151,6 @@
                 top:230px;
                 left:16%;
             }
-        }
-    }
-    .description {
-        float:right;
-        margin-top:180px;
-        margin-right:150px;
-        font-family:'Cairo';
-        font-size:32px;
-        line-height:36px;
-        @include mq(0,1200px){
-            right:5%;
-            top:55vh;
-        }
-        @include mq(0,900px){
-            top:620px;
-            font-size:26px;
         }
     }
 }
