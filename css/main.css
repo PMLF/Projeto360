@@ -394,7 +394,7 @@ main {
     z-index: -1; }
     @media (min-width: 0) and (max-width: 1200px) {
       .cta .wave {
-        left: -200px;
+        left: -500px;
         top: 150px; } }
 
 .keep-an-eye-out {
@@ -403,7 +403,7 @@ main {
   transform: translateY(-80px); }
   @media (min-width: 0) and (max-width: 1200px) {
     .keep-an-eye-out {
-      top: 40vh; } }
+      top: 20vh; } }
   .keep-an-eye-out div {
     position: absolute;
     right: 0;
@@ -432,8 +432,14 @@ main {
   transform: translateY(-100px);
   margin-bottom: 50px;
   height: 90%; }
+  @media (min-width: 0) and (max-width: 1200px) {
+    .promo-video {
+      transform: translateY(100px); } }
   .promo-video iframe {
     height: 100%; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .promo-video iframe {
+        height: 70%; } }
 
 .pointer {
   position: fixed;

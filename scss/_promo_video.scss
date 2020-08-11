@@ -2,7 +2,13 @@
     transform:translateY(-100px);
     margin-bottom:50px;
     height:90%;
+    @include mq(0,1200px){
+        transform:translateY(100px);
+    }
     iframe {
         height:100%;
+        @include mq(0,1200px){
+            height:70%;
+        }
     }
 }
