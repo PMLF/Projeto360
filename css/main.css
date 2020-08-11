@@ -434,12 +434,10 @@ main {
   height: 90%; }
   @media (min-width: 0) and (max-width: 1200px) {
     .promo-video {
-      transform: translateY(100px); } }
+      transform: translateY(100px);
+      height: 70%; } }
   .promo-video iframe {
     height: 100%; }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .promo-video iframe {
-        height: 70%; } }
 
 .pointer {
   position: fixed;
