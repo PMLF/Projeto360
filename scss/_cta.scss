@@ -1,0 +1,71 @@
+.cta {
+    position:relative;
+    z-index:1;
+    padding-left:10%;
+    @include mq(0,1200px){
+        top:370px;
+        left:18%;
+    }
+    @include mq(0,900px){
+        top:320px;
+    }
+    p {
+        font-family:'Cairo';
+        font-size:26px;
+        width:415px;
+        line-height:30px;
+    }
+    form {
+        input {
+            &:nth-of-type(-n + 2) {
+                display:block;
+                font-family:'Cairo';
+                font-size:26px;
+                border:none;
+                border-bottom:solid 2px #000;
+                margin-top:10px;
+            }
+        }
+        .name {
+            width:415px;
+        }
+        .contact {
+            width:325px;
+        }
+        .submit {
+            display:block;
+            margin-left:400px;
+            width:269px;
+            height:72px;
+            border:solid 4px $ccb-red;
+            font-size:36px;
+            font-family:'Anton';
+            color:$ccb-red;
+            background-color: white;
+            -webkit-box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
+            -moz-box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
+            box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
+            @include mq(0,1200px){
+                top:-20px;
+                left:380px;
+            }
+            &:hover {
+                background-color:#F0F0F0;
+                transform:scale(1.05);
+                transition:0.2s;
+            }
+            &:active {
+                transform:scale(0.95);
+                transition:0.2s;
+            }
+        }
+    }
+    .wave {
+        position: absolute;
+        top:100px;
+        left:-700px;
+        height:400px;
+        transform:rotate(180deg);
+        z-index:-1;
+    }
+}

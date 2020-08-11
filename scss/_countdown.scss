@@ -1,0 +1,113 @@
+.countdown {
+    position:relative;
+    @include mq(0,1200px){
+        height:80%;
+    }
+    .hand {
+        display:inline-block;
+        width:50%;
+        transform:rotate(-20deg) translate(-12%,-10%);
+        @include mq(0,1200px){
+            width:54%;
+            top:-220px;
+            left:-80px;
+        }
+        @include mq(0,900px){
+            width:60%;
+            top:-220px;
+            left:-60px;
+        }
+    }
+    .clock {
+        display: inline-block;
+        position:absolute;
+        top:140px;
+        width:50%;
+        @include mq(0,1200px){
+            top:0;
+            right:5%;
+        }
+        @include mq(0,900px){
+            top:-5%;
+            width:48%;
+        }
+        section {
+            &:last-of-type {
+                margin-top:30px;
+                margin-left:120px;
+                @include mq(0,900px){
+                    margin-left:40px;
+                    margin-top:12px;
+                }
+            }
+            p {
+                font-family:'Anton';
+                display:inline-block;
+                vertical-align: top;
+                position:relative;
+                &:first-of-type {
+                    margin-right:100px;
+                    @include mq(0,1200px){
+                        margin-right:80px;
+                    }
+                    @include mq(0,900px){
+                        margin-right:60px;
+                    }
+                }
+                &:nth-last-of-type(3) {
+                    .measure {
+                        margin-top:30px;
+                    }
+                }
+                .number {
+                    font-size:170px;
+                    margin-right:20px;
+                    &:hover {
+                        color:$ccb-red;
+                        transition:color 0.5s;
+                    }
+                    @include mq(0,1200px){
+                        font-size:130px;
+                    }
+                    @include mq(0,900px){
+                        font-size:112px;
+                        margin-right:8px;
+                    }
+                }
+                .measure {
+                    font-size:40px;
+                    text-transform:uppercase;
+                    position:absolute;
+                    top:0;
+                    &:hover {
+                        color:$ccb-blue;
+                        transition:color 0.5s;
+                    }
+                    @include mq(0,900px){
+                        font-size:26px;
+                        writing-mode: vertical-lr;
+                    }
+                    @include mq(0,1200px){
+                        font-size:32px;
+                        writing-mode: vertical-lr;
+                    }
+                }
+                .vertical {
+                    writing-mode: vertical-lr;
+                }
+            }
+        }
+        .wave {
+            position:absolute;
+            top:0;
+            right:0;
+            height:45vh;
+            opacity:0.4;
+            z-index:-1;
+            @include mq(0,1200px){
+                top:-6vh;
+                height:40vh;
+            }
+        }
+    }
+}

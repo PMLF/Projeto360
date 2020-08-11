@@ -1,18 +1,56 @@
 $(document).ready(function(){
     // Pointer mask
     $('.hero').mousemove(function(e) {
+        let screenProportions = Math.round(1920/941);
         let x = e.clientX;
         let y = e.clientY;
-      
-        $('.masked').css('-webkit-mask-position-x', x - 644);
-        $('.masked').css('-webkit-mask-position-y', y + 84);
+        if (Math.round(window.innerWidth/window.innerHeight) == screenProportions) {
+            $('.masked').css('-webkit-mask-position-x', x - (window.innerWidth/3));
+            $('.masked').css('-webkit-mask-position-y', y - 110);
+        }
+        else {
+            $('.masked').addClass('hidden');
+        }
+        //$('.pointer').addClass('hidden');
     });
-    $(window).scroll(function() {
+    /*
+    $('.hero').mouseout(function(e) {
+        $('.pointer').removeClass('hidden');
+    });
+    $('.title-text').mousemove(function(e) {
+    });
+    */
+    /*$
+    (window).scroll(function() {
+        let y = $('.masked').position().top;
+        console.log(y);
         $('.masked').css('-webkit-mask-position-y', y + $(window).scrollTop()); 
     });
+    */
 
+    // Main title hover
+    let mainTitleSpans = document.querySelectorAll('.title-text span');
+    for (let i = 0; i < mainTitleSpans.length; i++) {
+        mainTitleSpans[i].addEventListener('mouseover',
+            function (e) {
+                for (let j = 0; j < mainTitleSpans.length; j++) {
+                    mainTitleSpans[j].style.color = '#C7161D';
+                    mainTitleSpans[j].style.transition = '0.4s';
+                }
+            }
+        );
+        mainTitleSpans[i].addEventListener('mouseout',
+            function (e) {
+                for (let j = 0; j < mainTitleSpans.length; j++) {
+                    mainTitleSpans[j].style.color = '#000';
+                    mainTitleSpans[j].style.transition = '0.2s';
+                }
+            }
+        );
+    }
+    
     // Countdown
-    let endOfCampaign = new Date("Aug 07, 2020 19:00:00").getTime();
+    let endOfCampaign = new Date("Aug 22, 2020 00:00:00").getTime();
     let x = setInterval(function() {
         let now = new Date().getTime();
 
@@ -33,40 +71,4 @@ $(document).ready(function(){
         document.querySelector(".minutes").innerHTML = timeMeasures[2];
         document.querySelector(".seconds").innerHTML = timeMeasures[3];
     }, 1000);
-
-    // Main title hover
-    let mainTitleSpans = document.querySelectorAll('.main-title span');
-    for (let i = 0; i < mainTitleSpans.length; i++) {
-        mainTitleSpans[i].addEventListener('mouseover',
-            function (e) {
-                for (let j = 0; j < mainTitleSpans.length; j++) {
-                    mainTitleSpans[j].style.color = '#C7161D';
-                    mainTitleSpans[j].style.transition = '0.4s';
-                }
-            }
-        );
-        mainTitleSpans[i].addEventListener('mouseout',
-            function (e) {
-                for (let j = 0; j < mainTitleSpans.length; j++) {
-                    mainTitleSpans[j].style.color = '#000';
-                    mainTitleSpans[j].style.transition = '0.2s';
-                }
-            }
-        );
-    }
-
-    // Bust hover -> hide pointer
-    let masked = document.querySelector('.masked');
-    let pointer = document.querySelector('.pointer');
-    masked.addEventListener('mouseover',
-        function (e) {
-            pointer.style.display = "none";
-        }
-    );
-    masked.addEventListener('mouseout',
-        function (e) {
-            pointer.style.display = "block";
-            masked.style.opacity = 0;
-        }
-    );
 });
