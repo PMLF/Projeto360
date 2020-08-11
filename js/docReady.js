@@ -1,17 +1,32 @@
 $(document).ready(function(){
     // Pointer mask
     $('.hero').mousemove(function(e) {
+        let screenProportions = Math.round(1920/941);
         let x = e.clientX;
         let y = e.clientY;
-      
-        $('.masked').css('-webkit-mask-position-x', x - 644);
-        $('.masked').css('-webkit-mask-position-y', y + 105);
+        if (Math.round(window.innerWidth/window.innerHeight) == screenProportions) {
+            $('.masked').css('-webkit-mask-position-x', x - (window.innerWidth/3));
+            $('.masked').css('-webkit-mask-position-y', y - 110);
+        }
+        else {
+            $('.masked').addClass('hidden');
+        }
+        //$('.pointer').addClass('hidden');
     });
-    /*$(window).scroll(function() {
+    /*
+    $('.hero').mouseout(function(e) {
+        $('.pointer').removeClass('hidden');
+    });
+    $('.title-text').mousemove(function(e) {
+    });
+    */
+    /*$
+    (window).scroll(function() {
         let y = $('.masked').position().top;
         console.log(y);
         $('.masked').css('-webkit-mask-position-y', y + $(window).scrollTop()); 
-    });*/
+    });
+    */
 
     // Main title hover
     let mainTitleSpans = document.querySelectorAll('.title-text span');
@@ -33,22 +48,7 @@ $(document).ready(function(){
             }
         );
     }
-
-    // Bust hover -> hide pointer
-    /*let masked = document.querySelector('.masked');
-    let pointer = document.querySelector('.pointer');
-    masked.addEventListener('mouseover',
-        function (e) {
-            pointer.style.display = "none";
-        }
-    );
-    masked.addEventListener('mouseout',
-        function (e) {
-            pointer.style.display = "block";
-            masked.style.opacity = 0;
-        }
-    );*/
-
+    
     // Countdown
     let endOfCampaign = new Date("Aug 22, 2020 00:00:00").getTime();
     let x = setInterval(function() {

@@ -15,7 +15,6 @@
         right:0;
         width:74%;
         opacity:0.9;
-        z-index:-1;
         height: 70%;
         background: url('/images/bust_cut.jpg') no-repeat;
         background-size: 100% auto;
@@ -29,7 +28,7 @@
             mask-repeat: no-repeat;
             mask-size: 300px;
             pointer-events: none;
-            @include mq(0,1200px){
+            @include mq(0,1700px){
                 display:none;
             }
         }
@@ -45,7 +44,7 @@
             height:400px;
             width:26%;
             @include mq(0,1200px){
-                width:30%;
+                width:26%;
             }
             @include mq(0,900px){
                 width:34%;
@@ -69,7 +68,7 @@
             @include mq(0,1200px){
                 top:270px;
                 height:50px;
-                width:calc(18% + 1px);
+                width:14%;
             }
             @include mq(0,900px){
                 width:calc(20% + 1px);
@@ -106,8 +105,10 @@
                 font-size:32px;
                 line-height:36px;
                 @include mq(0,1200px){
-                    right:5%;
-                    top:55vh;
+                    margin-top:50px;
+                    margin-right:80px;
+                    font-size:24px;
+                    line-height:30px;
                 }
                 @include mq(0,900px){
                     top:620px;
@@ -137,6 +138,7 @@
             @include mq(0,1330px){
                 font-size:104px;
                 line-height:130px;
+                left:10%;
             }
             @include mq(0,1200px){
                 font-size:90px;

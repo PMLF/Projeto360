@@ -101,7 +101,6 @@ main {
     right: 0;
     width: 74%;
     opacity: 0.9;
-    z-index: -1;
     height: 70%;
     background: url("/images/bust_cut.jpg") no-repeat;
     background-size: 100% auto; }
@@ -115,7 +114,7 @@ main {
       mask-repeat: no-repeat;
       mask-size: 300px;
       pointer-events: none; }
-      @media (min-width: 0) and (max-width: 1200px) {
+      @media (min-width: 0) and (max-width: 1700px) {
         .hero .bust .masked {
           display: none; } }
     .hero .bust .wave {
@@ -129,7 +128,7 @@ main {
       width: 26%; }
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .title .top-left-blue {
-          width: 30%; } }
+          width: 26%; } }
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .top-left-blue {
           width: 34%; } }
@@ -151,7 +150,7 @@ main {
         .hero .title .small {
           top: 270px;
           height: 50px;
-          width: calc(18% + 1px); } }
+          width: 14%; } }
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .small {
           width: calc(20% + 1px); } }
@@ -186,8 +185,10 @@ main {
         line-height: 36px; }
         @media (min-width: 0) and (max-width: 1200px) {
           .hero .title .large .description {
-            right: 5%;
-            top: 55vh; } }
+            margin-top: 50px;
+            margin-right: 80px;
+            font-size: 24px;
+            line-height: 30px; } }
         @media (min-width: 0) and (max-width: 900px) {
           .hero .title .large .description {
             top: 620px;
@@ -210,7 +211,8 @@ main {
       @media (min-width: 0) and (max-width: 1330px) {
         .hero .title .title-text {
           font-size: 104px;
-          line-height: 130px; } }
+          line-height: 130px;
+          left: 10%; } }
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .title .title-text {
           font-size: 90px;
@@ -226,9 +228,7 @@ main {
           left: 16%; } }
 
 .countdown {
-  position: relative;
-  font-size: 0;
-  z-index: -1; }
+  position: relative; }
   @media (min-width: 0) and (max-width: 1200px) {
     .countdown {
       height: 80%; } }
@@ -325,7 +325,9 @@ main {
           height: 40vh; } }
 
 .cta {
-  margin-left: 10%; }
+  position: relative;
+  z-index: 1;
+  padding-left: 10%; }
   @media (min-width: 0) and (max-width: 1200px) {
     .cta {
       top: 370px;
@@ -432,7 +434,7 @@ main {
   transform: translate(-50%, -50%);
   pointer-events: none;
   box-sizing: border-box;
-  z-index: 3; }
+  z-index: 2; }
 
 body {
   cursor: none; }
@@ -481,5 +483,8 @@ body {
 body ::selection {
   color: #cff;
   background-color: #222; }
+
+.hidden {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,7 @@
 .cta {
-    margin-left:10%;
+    position:relative;
+    z-index:1;
+    padding-left:10%;
     @include mq(0,1200px){
         top:370px;
         left:18%;
