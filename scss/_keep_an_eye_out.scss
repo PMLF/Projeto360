@@ -3,10 +3,7 @@
     height:30%;
     transform:translateY(-80px);
     @include mq(0,1200px){
-        top:60vh;
-    }
-    @include mq(0,900px){
-        width:60%;
+        top:40vh;
     }
     div {
         position:absolute;

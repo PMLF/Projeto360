@@ -50,7 +50,7 @@ $(document).ready(function(){
     }
     
     // Countdown
-    let endOfCampaign = new Date("Aug 22, 2020 00:00:00").getTime();
+    let endOfCampaign = new Date("Aug 16, 2020 23:59:00").getTime();
     let x = setInterval(function() {
         let now = new Date().getTime();
 

@@ -148,8 +148,6 @@ main {
       top: 320px; }
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .title .small {
-          top: 270px;
-          height: 50px;
           width: 14%; } }
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .small {
@@ -160,7 +158,6 @@ main {
       top: 380px; }
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .title .mid {
-          top: 320px;
           height: 200px;
           width: 38%; } }
       @media (min-width: 0) and (max-width: 900px) {
@@ -185,7 +182,7 @@ main {
         line-height: 36px; }
         @media (min-width: 0) and (max-width: 1200px) {
           .hero .title .large .description {
-            margin-top: 50px;
+            margin-top: 60px;
             margin-right: 80px;
             font-size: 24px;
             line-height: 30px; } }
@@ -229,9 +226,6 @@ main {
 
 .countdown {
   position: relative; }
-  @media (min-width: 0) and (max-width: 1200px) {
-    .countdown {
-      height: 80%; } }
   .countdown .hand {
     display: inline-block;
     width: 50%;
@@ -239,83 +233,90 @@ main {
     @media (min-width: 0) and (max-width: 1200px) {
       .countdown .hand {
         width: 54%;
-        top: -220px;
-        left: -80px; } }
+        transform: rotate(-20deg) translate(-12%, -20%); } }
     @media (min-width: 0) and (max-width: 900px) {
       .countdown .hand {
-        width: 60%;
-        top: -220px;
-        left: -60px; } }
+        width: 60%; } }
   .countdown .clock {
     display: inline-block;
     position: absolute;
     top: 140px;
+    z-index: 1;
     width: 50%; }
     @media (min-width: 0) and (max-width: 1200px) {
       .countdown .clock {
         top: 0;
-        right: 5%; } }
+        right: 4%; } }
     @media (min-width: 0) and (max-width: 900px) {
       .countdown .clock {
         top: -5%;
         width: 48%; } }
-    .countdown .clock section:last-of-type {
-      margin-top: 30px;
-      margin-left: 120px; }
-      @media (min-width: 0) and (max-width: 900px) {
-        .countdown .clock section:last-of-type {
-          margin-left: 40px;
-          margin-top: 12px; } }
-    .countdown .clock section p {
-      font-family: 'Anton';
-      display: inline-block;
-      vertical-align: top;
-      position: relative; }
-      .countdown .clock section p:first-of-type {
-        margin-right: 100px; }
+    .countdown .clock section {
+      text-align: center;
+      transform: translateX(-30%); }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .countdown .clock section {
+          transform: translateX(-10%); } }
+      .countdown .clock section:last-of-type {
+        margin-top: 30px;
+        transform: translateX(-18%); }
         @media (min-width: 0) and (max-width: 1200px) {
-          .countdown .clock section p:first-of-type {
-            margin-right: 80px; } }
+          .countdown .clock section:last-of-type {
+            transform: translateX(0);
+            margin-top: 12px; } }
         @media (min-width: 0) and (max-width: 900px) {
-          .countdown .clock section p:first-of-type {
-            margin-right: 60px; } }
-      .countdown .clock section p:nth-last-of-type(3) .measure {
-        margin-top: 30px; }
-      .countdown .clock section p .number {
-        font-size: 170px;
-        margin-right: 20px; }
-        .countdown .clock section p .number:hover {
-          color: #C7161D;
-          transition: color 0.5s; }
-        @media (min-width: 0) and (max-width: 1200px) {
-          .countdown .clock section p .number {
-            font-size: 130px; } }
-        @media (min-width: 0) and (max-width: 900px) {
-          .countdown .clock section p .number {
-            font-size: 112px;
-            margin-right: 8px; } }
-      .countdown .clock section p .measure {
-        font-size: 40px;
-        text-transform: uppercase;
-        position: absolute;
-        top: 0; }
-        .countdown .clock section p .measure:hover {
-          color: #3BC0C7;
-          transition: color 0.5s; }
-        @media (min-width: 0) and (max-width: 900px) {
-          .countdown .clock section p .measure {
-            font-size: 26px;
-            writing-mode: vertical-lr; } }
-        @media (min-width: 0) and (max-width: 1200px) {
-          .countdown .clock section p .measure {
-            font-size: 32px;
-            writing-mode: vertical-lr; } }
-      .countdown .clock section p .vertical {
-        writing-mode: vertical-lr; }
+          .countdown .clock section:last-of-type {
+            margin-top: 12px; } }
+      .countdown .clock section p {
+        font-family: 'Anton';
+        display: inline-block;
+        vertical-align: top;
+        position: relative; }
+        .countdown .clock section p:first-of-type {
+          margin-right: 100px; }
+          @media (min-width: 0) and (max-width: 1200px) {
+            .countdown .clock section p:first-of-type {
+              margin-right: 80px; } }
+          @media (min-width: 0) and (max-width: 900px) {
+            .countdown .clock section p:first-of-type {
+              margin-right: 60px; } }
+        .countdown .clock section p:nth-last-of-type(3) .measure {
+          margin-top: 30px; }
+        .countdown .clock section p .number {
+          font-size: 170px;
+          margin-right: 20px; }
+          .countdown .clock section p .number:hover {
+            color: #C7161D;
+            transition: color 0.5s; }
+          @media (min-width: 0) and (max-width: 1200px) {
+            .countdown .clock section p .number {
+              font-size: 130px; } }
+          @media (min-width: 0) and (max-width: 900px) {
+            .countdown .clock section p .number {
+              font-size: 112px;
+              margin-right: 8px; } }
+        .countdown .clock section p .measure {
+          font-size: 40px;
+          text-transform: uppercase;
+          position: absolute;
+          top: 0; }
+          .countdown .clock section p .measure:hover {
+            color: #3BC0C7;
+            transition: color 0.5s; }
+          @media (min-width: 0) and (max-width: 900px) {
+            .countdown .clock section p .measure {
+              font-size: 26px;
+              writing-mode: vertical-lr; } }
+          @media (min-width: 0) and (max-width: 1200px) {
+            .countdown .clock section p .measure {
+              font-size: 32px;
+              writing-mode: vertical-lr; } }
+        .countdown .clock section p .vertical {
+          writing-mode: vertical-lr; }
     .countdown .clock .wave {
       position: absolute;
       top: 0;
-      right: 0;
+      right: -300px;
       height: 45vh;
       opacity: 0.4;
       z-index: -1; }
@@ -330,16 +331,15 @@ main {
   padding-left: 10%; }
   @media (min-width: 0) and (max-width: 1200px) {
     .cta {
-      top: 370px;
-      left: 18%; } }
-  @media (min-width: 0) and (max-width: 900px) {
-    .cta {
-      top: 320px; } }
+      padding-left: 25%; } }
   .cta p {
     font-family: 'Cairo';
     font-size: 26px;
     width: 415px;
     line-height: 30px; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .cta p {
+        font-size: 22px; } }
   .cta form input:nth-of-type(-n + 2) {
     display: block;
     font-family: 'Cairo';
@@ -347,10 +347,19 @@ main {
     border: none;
     border-bottom: solid 2px #000;
     margin-top: 10px; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .cta form input:nth-of-type(-n + 2) {
+        font-size: 22px; } }
   .cta form .name {
     width: 415px; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .cta form .name {
+        width: 300px; } }
   .cta form .contact {
     width: 325px; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .cta form .contact {
+        width: 260px; } }
   .cta form .submit {
     display: block;
     margin-left: 400px;
@@ -366,8 +375,9 @@ main {
     box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.4); }
     @media (min-width: 0) and (max-width: 1200px) {
       .cta form .submit {
-        top: -20px;
-        left: 380px; } }
+        position: relative;
+        top: -40px;
+        left: -60px; } }
     .cta form .submit:hover {
       background-color: #F0F0F0;
       transform: scale(1.05);
@@ -382,6 +392,10 @@ main {
     height: 400px;
     transform: rotate(180deg);
     z-index: -1; }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .cta .wave {
+        left: -200px;
+        top: 150px; } }
 
 .keep-an-eye-out {
   position: relative;
@@ -389,10 +403,7 @@ main {
   transform: translateY(-80px); }
   @media (min-width: 0) and (max-width: 1200px) {
     .keep-an-eye-out {
-      top: 60vh; } }
-  @media (min-width: 0) and (max-width: 900px) {
-    .keep-an-eye-out {
-      width: 60%; } }
+      top: 40vh; } }
   .keep-an-eye-out div {
     position: absolute;
     right: 0;

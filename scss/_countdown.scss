@@ -1,42 +1,45 @@
 .countdown {
     position:relative;
-    @include mq(0,1200px){
-        height:80%;
-    }
     .hand {
         display:inline-block;
         width:50%;
         transform:rotate(-20deg) translate(-12%,-10%);
         @include mq(0,1200px){
             width:54%;
-            top:-220px;
-            left:-80px;
+            transform:rotate(-20deg) translate(-12%,-20%);
         }
         @include mq(0,900px){
             width:60%;
-            top:-220px;
-            left:-60px;
         }
     }
     .clock {
         display: inline-block;
         position:absolute;
         top:140px;
+        z-index:1;
         width:50%;
         @include mq(0,1200px){
             top:0;
-            right:5%;
+            right:4%;
         }
         @include mq(0,900px){
             top:-5%;
             width:48%;
         }
         section {
+            text-align:center;
+            transform:translateX(-30%);
+            @include mq(0,1200px){
+                transform:translateX(-10%);
+            }
             &:last-of-type {
                 margin-top:30px;
-                margin-left:120px;
+                transform:translateX(-18%);
+                @include mq(0,1200px){
+                    transform:translateX(0);
+                    margin-top:12px;
+                }
                 @include mq(0,900px){
-                    margin-left:40px;
                     margin-top:12px;
                 }
             }
@@ -100,7 +103,7 @@
         .wave {
             position:absolute;
             top:0;
-            right:0;
+            right:-300px;
             height:45vh;
             opacity:0.4;
             z-index:-1;
