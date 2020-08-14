@@ -5,6 +5,9 @@
     @include mq(0,1200px){
         padding-left:25%;
     }
+    @include mq(0,900px){
+        padding-left:15%;
+    }
     p {
         font-family:'Cairo';
         font-size:26px;
@@ -84,6 +87,9 @@
         @include mq(0,1200px){
             left:-500px;
             top:150px;
+        }
+        @include mq(0,768px){
+            left:-680px;
         }
     }
 }

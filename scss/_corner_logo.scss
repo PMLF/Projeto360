@@ -9,6 +9,10 @@
     img {
         width:200px;
         padding:40px 50px;
+        @include mq(0,900px){
+            width:140px;
+            padding:20px 30px;
+        }
         @include mq(0,768px){
             width:120px;
             padding:20px 30px;
@@ -26,6 +30,11 @@
         left:200px;
         width:calc(90% - 180px);
         height:62px;
+        @include mq(0,900px){
+            left:140px;
+            width:calc(90% - 120px);
+            height:40px;
+        }
         @include mq(0,768px){
             left:120px;
             width:calc(90% - 120px);
@@ -37,6 +46,12 @@
         left:100px;
         width:100px;
         height:66px;
+        @include mq(0,900px){
+            left:68px;
+            top:35px;
+            width:72px;
+            height:42px;
+        }
         @include mq(0,768px){
             left:60px;
             top:35px;
@@ -49,6 +64,10 @@
         left:0;
         width:100px;
         height:140vh;
+        @include mq(0,900px){
+            width:70px;
+            top:72px;
+        }
         @include mq(0,768px){
             width:60px;
             top:64px;

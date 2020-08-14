@@ -76,6 +76,9 @@
                         font-size:112px;
                         margin-right:8px;
                     }
+                    @include mq(0,768px){
+                        font-size:90px;
+                    }
                 }
                 .measure {
                     font-size:40px;
@@ -86,13 +89,15 @@
                         color:$ccb-blue;
                         transition:color 0.5s;
                     }
-                    @include mq(0,900px){
-                        font-size:26px;
-                        writing-mode: vertical-lr;
-                    }
                     @include mq(0,1200px){
                         font-size:32px;
                         writing-mode: vertical-lr;
+                    }
+                    @include mq(0,900px){
+                        font-size:26px;
+                    }
+                    @include mq(0,768px){
+                        font-size:20px;
                     }
                 }
                 .vertical {

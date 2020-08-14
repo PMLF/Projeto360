@@ -5,11 +5,20 @@
     @include mq(0,1200px){
         top:20vh;
     }
+    @include mq(0,768px){
+        height:25%;
+    }
     div {
         position:absolute;
         right:0;
         height:150px;
         width:44%;
+        @include mq(0,900px){
+            height:120px;
+        }
+        @include mq(0,768px){
+            height:100px;
+        }
         
         &:first-of-type {
             font-size:96px;
@@ -25,6 +34,14 @@
             @include mq(0,1200px){
                 width:50%;
             }
+            @include mq(0,900px){
+                line-height:120px;
+            }
+            @include mq(0,768px){
+                width:44%;
+                font-size:46px;
+                line-height:100px;
+            }
         }
         &:nth-of-type(2) {
             height:60px;
@@ -36,6 +53,12 @@
             @include mq(0,1200px){
                 width:60%;
             }
+            @include mq(0,900px){
+                top:120px;
+            }
+            @include mq(0,768px){
+                top:100px;
+            }
         }
         &:last-of-type {
             height:100px;
@@ -43,6 +66,12 @@
             top:210px;
             @include mq(0,1500px){
                 width:40%;
+            }
+            @include mq(0,900px){
+                top:180px;
+            }
+            @include mq(0,768px){
+                top:100px;
             }
         }
     }

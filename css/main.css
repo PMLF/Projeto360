@@ -88,6 +88,12 @@ main {
 
 .hero {
   height: 65%; }
+  @media (min-width: 0) and (max-width: 900px) {
+    .hero {
+      height: 60%; } }
+  @media (min-width: 0) and (max-width: 768px) {
+    .hero {
+      height: 50%; } }
   .hero .top-right-blue {
     position: absolute;
     top: 0;
@@ -108,9 +114,6 @@ main {
     height: 70%;
     background: url("/images/bust_cut.jpg") no-repeat;
     background-size: 100% auto; }
-    @media (min-width: 0) and (max-width: 768px) {
-      .hero .bust {
-        width: 68%; } }
     .hero .bust .masked {
       width: 100%;
       height: 100%;
@@ -136,6 +139,9 @@ main {
           width: 150%; } }
   .hero .title {
     margin-top: 180px; }
+    @media (min-width: 0) and (max-width: 900px) {
+      .hero .title {
+        margin-top: 120px; } }
     @media (min-width: 0) and (max-width: 768px) {
       .hero .title {
         margin-top: 100px; } }
@@ -145,9 +151,8 @@ main {
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .title .top-left-blue {
           width: 26%; } }
-      @media (min-width: 0) and (max-width: 768px) {
+      @media (min-width: 0) and (max-width: 900px) {
         .hero .title .top-left-blue {
-          width: 32%;
           height: 200px; } }
     .hero .title .behind-title {
       position: absolute;
@@ -158,7 +163,10 @@ main {
           left: 12%; } }
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .behind-title {
-          left: 14%; } }
+          left: 10%; } }
+      @media (min-width: 0) and (max-width: 768px) {
+        .hero .title .behind-title {
+          left: 12%; } }
     .hero .title .small {
       width: 16%;
       height: 60px;
@@ -169,11 +177,13 @@ main {
           top: 250px; } }
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .small {
-          width: 12%; } }
+          width: 16%;
+          top: 180px; } }
       @media (min-width: 0) and (max-width: 768px) {
         .hero .title .small {
+          width: 14%;
           top: 160px;
-          width: 18%; } }
+          height: 40px; } }
     .hero .title .mid {
       width: 38%;
       height: 240px;
@@ -182,9 +192,14 @@ main {
         .hero .title .mid {
           z-index: 0;
           top: 310px; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .hero .title .mid {
+          top: 240px;
+          width: 45%; } }
       @media (min-width: 0) and (max-width: 768px) {
         .hero .title .mid {
-          top: 220px; } }
+          top: 200px;
+          width: 45%; } }
     .hero .title .large {
       width: 90%;
       height: 20%;
@@ -197,7 +212,8 @@ main {
           width: 88%; } }
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .large {
-          top: 420px; } }
+          top: 360px;
+          width: 90%; } }
       .hero .title .large .description {
         float: right;
         margin-top: 180px;
@@ -211,6 +227,9 @@ main {
             margin-right: 80px;
             font-size: 24px;
             line-height: 30px; } }
+        @media (min-width: 0) and (max-width: 900px) {
+          .hero .title .large .description {
+            margin-top: 80px; } }
         @media (min-width: 0) and (max-width: 768px) {
           .hero .title .large .description {
             margin-top: 0;
@@ -240,22 +259,19 @@ main {
         .hero .title .title-text {
           font-size: 90px;
           line-height: 110px;
-          top: 200px;
-          margin-left: 40px; } }
+          top: 200px; } }
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .title-text {
-          font-size: 80px;
-          line-height: 100px;
-          margin-left: 10px;
-          top: 230px;
-          left: 16%; } }
+          font-size: 70px;
+          line-height: 90px;
+          top: 150px;
+          left: 10%; } }
       @media (min-width: 0) and (max-width: 768px) {
         .hero .title .title-text {
-          font-size: 60px;
-          line-height: 80px;
-          margin-left: 10px;
+          font-size: 50px;
+          line-height: 70px;
           top: 130px;
-          left: 14%; } }
+          left: 13%; } }
 
 .countdown {
   position: relative; }
@@ -328,6 +344,9 @@ main {
             .countdown .clock section p .number {
               font-size: 112px;
               margin-right: 8px; } }
+          @media (min-width: 0) and (max-width: 768px) {
+            .countdown .clock section p .number {
+              font-size: 90px; } }
         .countdown .clock section p .measure {
           font-size: 40px;
           text-transform: uppercase;
@@ -336,14 +355,16 @@ main {
           .countdown .clock section p .measure:hover {
             color: #3BC0C7;
             transition: color 0.5s; }
-          @media (min-width: 0) and (max-width: 900px) {
-            .countdown .clock section p .measure {
-              font-size: 26px;
-              writing-mode: vertical-lr; } }
           @media (min-width: 0) and (max-width: 1200px) {
             .countdown .clock section p .measure {
               font-size: 32px;
               writing-mode: vertical-lr; } }
+          @media (min-width: 0) and (max-width: 900px) {
+            .countdown .clock section p .measure {
+              font-size: 26px; } }
+          @media (min-width: 0) and (max-width: 768px) {
+            .countdown .clock section p .measure {
+              font-size: 20px; } }
         .countdown .clock section p .vertical {
           writing-mode: vertical-lr; }
     .countdown .clock .wave {
@@ -365,6 +386,9 @@ main {
   @media (min-width: 0) and (max-width: 1200px) {
     .cta {
       padding-left: 25%; } }
+  @media (min-width: 0) and (max-width: 900px) {
+    .cta {
+      padding-left: 15%; } }
   .cta p {
     font-family: 'Cairo';
     font-size: 26px;
@@ -434,6 +458,9 @@ main {
       .cta .wave {
         left: -500px;
         top: 150px; } }
+    @media (min-width: 0) and (max-width: 768px) {
+      .cta .wave {
+        left: -680px; } }
 
 .keep-an-eye-out {
   position: relative;
@@ -442,11 +469,20 @@ main {
   @media (min-width: 0) and (max-width: 1200px) {
     .keep-an-eye-out {
       top: 20vh; } }
+  @media (min-width: 0) and (max-width: 768px) {
+    .keep-an-eye-out {
+      height: 25%; } }
   .keep-an-eye-out div {
     position: absolute;
     right: 0;
     height: 150px;
     width: 44%; }
+    @media (min-width: 0) and (max-width: 900px) {
+      .keep-an-eye-out div {
+        height: 120px; } }
+    @media (min-width: 0) and (max-width: 768px) {
+      .keep-an-eye-out div {
+        height: 100px; } }
     .keep-an-eye-out div:first-of-type {
       font-size: 96px;
       font-family: 'Anton';
@@ -461,6 +497,14 @@ main {
       @media (min-width: 0) and (max-width: 1200px) {
         .keep-an-eye-out div:first-of-type {
           width: 50%; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .keep-an-eye-out div:first-of-type {
+          line-height: 120px; } }
+      @media (min-width: 0) and (max-width: 768px) {
+        .keep-an-eye-out div:first-of-type {
+          width: 44%;
+          font-size: 46px;
+          line-height: 100px; } }
     .keep-an-eye-out div:nth-of-type(2) {
       height: 60px;
       width: 52%;
@@ -471,6 +515,12 @@ main {
       @media (min-width: 0) and (max-width: 1200px) {
         .keep-an-eye-out div:nth-of-type(2) {
           width: 60%; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .keep-an-eye-out div:nth-of-type(2) {
+          top: 120px; } }
+      @media (min-width: 0) and (max-width: 768px) {
+        .keep-an-eye-out div:nth-of-type(2) {
+          top: 100px; } }
     .keep-an-eye-out div:last-of-type {
       height: 100px;
       width: 36%;
@@ -478,6 +528,12 @@ main {
       @media (min-width: 0) and (max-width: 1500px) {
         .keep-an-eye-out div:last-of-type {
           width: 40%; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .keep-an-eye-out div:last-of-type {
+          top: 180px; } }
+      @media (min-width: 0) and (max-width: 768px) {
+        .keep-an-eye-out div:last-of-type {
+          top: 100px; } }
 
 .promo-video {
   transform: translateY(-100px);
@@ -487,6 +543,10 @@ main {
     .promo-video {
       transform: translateY(100px);
       height: 70%; } }
+  @media (min-width: 0) and (max-width: 900px) {
+    .promo-video {
+      transform: translateY(50px);
+      height: 50%; } }
   .promo-video iframe {
     height: 100%; }
 
@@ -515,6 +575,10 @@ body {
   .corner-logo img {
     width: 200px;
     padding: 40px 50px; }
+    @media (min-width: 0) and (max-width: 900px) {
+      .corner-logo img {
+        width: 140px;
+        padding: 20px 30px; } }
     @media (min-width: 0) and (max-width: 768px) {
       .corner-logo img {
         width: 120px;
@@ -530,6 +594,11 @@ body {
     left: 200px;
     width: calc(90% - 180px);
     height: 62px; }
+    @media (min-width: 0) and (max-width: 900px) {
+      .corner-logo .top-line {
+        left: 140px;
+        width: calc(90% - 120px);
+        height: 40px; } }
     @media (min-width: 0) and (max-width: 768px) {
       .corner-logo .top-line {
         left: 120px;
@@ -540,6 +609,12 @@ body {
     left: 100px;
     width: 100px;
     height: 66px; }
+    @media (min-width: 0) and (max-width: 900px) {
+      .corner-logo .corner-line {
+        left: 68px;
+        top: 35px;
+        width: 72px;
+        height: 42px; } }
     @media (min-width: 0) and (max-width: 768px) {
       .corner-logo .corner-line {
         left: 60px;
@@ -551,6 +626,10 @@ body {
     left: 0;
     width: 100px;
     height: 140vh; }
+    @media (min-width: 0) and (max-width: 900px) {
+      .corner-logo .left-line {
+        width: 70px;
+        top: 72px; } }
     @media (min-width: 0) and (max-width: 768px) {
       .corner-logo .left-line {
         width: 60px;
