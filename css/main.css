@@ -93,7 +93,7 @@ main {
       height: 60%; } }
   @media (min-width: 0) and (max-width: 768px) {
     .hero {
-      height: 50%; } }
+      height: 420px; } }
   @media (min-width: 0) and (max-width: 375px) {
     .hero {
       height: 490px; } }
