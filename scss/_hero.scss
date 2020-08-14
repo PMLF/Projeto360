@@ -6,6 +6,9 @@
     @include mq(0,768px){
         height:50%;
     }
+    @include mq(0,375px){
+        height:490px;
+    }
 
     .top-right-blue {
         position:absolute;
@@ -18,6 +21,10 @@
             width:26%;
             height:100px;
         }
+        @include mq(0,375px){
+            width:30%;
+            height:50px;
+        }
     }
     .bust {
         position:absolute;
@@ -28,6 +35,12 @@
         height: 70%;
         background: url('/images/bust_cut.jpg') no-repeat;
         background-size: 100% auto;
+        @include mq(0,375px){
+            width:110%;
+            transform:translateX(34%);
+            background: url('/images/bust_cut_mobile.jpg') no-repeat;
+            background-size: 100% auto;
+        }
         .masked {
             width: 100%;
             height:100%;
@@ -52,6 +65,10 @@
                 height:45%;
                 width:150%;
             }
+            @include mq(0,375px){
+                height:40%;
+                max-height:300px;
+            }
         }
     }
     .title {
@@ -62,6 +79,9 @@
         @include mq(0,768px){
             margin-top:100px;
         }
+        @include mq(0,375px){
+            margin-top:60px;
+        }
         .top-left-blue {
             height:400px;
             width:26%;
@@ -70,6 +90,10 @@
             }
             @include mq(0,900px){
                 height:200px;
+            }
+            @include mq(0,375px){
+                height:140px;
+                width:28%;
             }
         }
         .behind-title {
@@ -103,6 +127,11 @@
                 top:160px;
                 height:40px;
             }
+            @include mq(0,375px){
+                width:calc(16% - 2px);
+                top:120px;
+                height:40px;
+            }
         }
         .mid {
             width:38%;
@@ -120,6 +149,11 @@
                 top:200px;
                 width:45%;
             }
+            @include mq(0,375px){
+                width:28%;
+                top:160px;
+                height:60px;
+            }
         }
         .large {
             width:90%;
@@ -134,6 +168,11 @@
             @include mq(0,900px){
                 top:360px;
                 width:90%;
+            }
+            @include mq(0,375px){
+                top:220px;
+                height:280px;
+                padding-top:120px;
             }
             .description {
                 float:right;
@@ -156,6 +195,13 @@
                     font-size:18px;
                     transform:translateY(-10%);
                 }
+                @include mq(0,375px){
+                    font-size:20px;
+                    line-height:22px;
+                    width:80%;
+                    margin-right:20px;
+                    margin-top:60px;
+                }
             }
         }
         .title-text {
@@ -172,9 +218,15 @@
                 
                 &:first-of-type {
                     width:25%;
+                    @include mq(0,375px){
+                        width:40%;
+                    }
                 }
                 &:nth-of-type(2) {
                     width:75%;
+                    @include mq(0,375px){
+                        width:90%;
+                    }
                 }
             }
             @include mq(0,1330px){
@@ -198,6 +250,12 @@
                 line-height:70px;
                 top:130px;
                 left:13%;
+            }
+            @include mq(0,375px){
+                font-size:46px;
+                line-height:54px;
+                top:164px;
+                left:15%;
             }
         }
     }

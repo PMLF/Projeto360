@@ -15,7 +15,10 @@
         }
         @include mq(0,768px){
             width:120px;
-            padding:20px 30px;
+        }
+        @include mq(0,375px){
+            width:80px;
+            padding:10px 15px;
         }
     }
     .red-line {
@@ -24,6 +27,11 @@
         position:absolute;
         border-top:none;
         border-left:none;
+        @include mq(0,375px){
+            border:solid 3px $ccb-red;
+            border-top:none;
+            border-left:none;
+        }
     }
     .top-line {
         top:0;
@@ -37,8 +45,13 @@
         }
         @include mq(0,768px){
             left:120px;
-            width:calc(90% - 120px);
+            width:calc(90% - 100px);
             height:40px;
+        }
+        @include mq(0,375px){
+            left:80px;
+            width:calc(90% - 80px);
+            height:22px;
         }
     }
     .corner-line {
@@ -54,9 +67,14 @@
         }
         @include mq(0,768px){
             left:60px;
-            top:35px;
             width:60px;
             height:34px;
+        }
+        @include mq(0,375px){
+            left:26px;
+            top:20px;
+            width:56px;
+            height:22px;
         }
     }
     .left-line {
@@ -71,6 +89,11 @@
         @include mq(0,768px){
             width:60px;
             top:64px;
+        }
+        @include mq(0,375px){
+            width:29px;
+            top:40px;
+            height:100vh;
         }
     }
 }

@@ -8,6 +8,9 @@
     @include mq(0,900px){
         padding-left:15%;
     }
+    @include mq(0,375px){
+        padding:0 10%;
+    }
     p {
         font-family:'Cairo';
         font-size:26px;
@@ -15,6 +18,10 @@
         line-height:30px;
         @include mq(0,1200px){
             font-size:22px;
+        }
+        @include mq(0,375px){
+            font-size:18px;
+            width:100%;
         }
     }
     form {
@@ -29,6 +36,9 @@
                 @include mq(0,1200px){
                     font-size:22px;
                 }
+                @include mq(0,375px){
+                    font-size:18px;
+                }
             }
         }
         .name {
@@ -36,11 +46,17 @@
             @include mq(0,1200px){
                 width:300px;
             }
+            @include mq(0,375px){
+                width:100%
+            }
         }
         .contact {
             width:325px;
             @include mq(0,1200px){
                 width:260px;
+            }
+            @include mq(0,375px){
+                width:95%;
             }
         }
         .submit {
@@ -56,15 +72,21 @@
             -webkit-box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
             -moz-box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
             box-shadow: 3px 3px 17px -2px rgba(0,0,0,0.4);
-            @include mq(0,1200px){
-                position:relative;
-                top:-40px;
-                left:-60px;
-            }
             @include mq(0,1500px){
                 position:relative;
                 top:-30px;
                 left:-50px;
+            }
+            @include mq(0,1200px){
+                top:-40px;
+                left:-60px;
+            }
+            @include mq(0,375px){
+                position:static;
+                width:60%;
+                height:60px;
+                margin: 20px 0 0 40%;
+                font-size:28px;
             }
             &:hover {
                 background-color:#F0F0F0;
@@ -90,6 +112,9 @@
         }
         @include mq(0,768px){
             left:-680px;
+        }
+        @include mq(0,375px){
+            height:350px;
         }
     }
 }

@@ -1,5 +1,8 @@
 .countdown {
     position:relative;
+    @include mq(0,375px){
+        height:340px;
+    }
     .hand {
         display:inline-block;
         width:50%;
@@ -10,6 +13,11 @@
         }
         @include mq(0,900px){
             width:60%;
+        }
+        @include mq(0,375px){
+            transform:rotate(-20deg) translate(-12%,-60px);
+            position:relative;
+            z-index:-1;
         }
     }
     .clock {
@@ -25,6 +33,11 @@
         @include mq(0,900px){
             top:-5%;
             width:48%;
+        }
+        @include mq(0,375px){
+            top:100px;
+            width:70%;
+            right:30px;
         }
         section {
             text-align:center;
@@ -79,6 +92,9 @@
                     @include mq(0,768px){
                         font-size:90px;
                     }
+                    @include mq(0,375px){
+                        font-size:60px;
+                    }
                 }
                 .measure {
                     font-size:40px;
@@ -115,6 +131,9 @@
             @include mq(0,1200px){
                 top:-6vh;
                 height:40vh;
+            }
+            @include mq(0,375px){
+                transform:translateX(50px);
             }
         }
     }

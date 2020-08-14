@@ -10,6 +10,9 @@
         transform:translateY(50px);
         height:50%;
     }
+    @include mq(0,375px){
+        height:30%;
+    }
     iframe {
         height:100%;
     }

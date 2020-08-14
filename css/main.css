@@ -94,6 +94,9 @@ main {
   @media (min-width: 0) and (max-width: 768px) {
     .hero {
       height: 50%; } }
+  @media (min-width: 0) and (max-width: 375px) {
+    .hero {
+      height: 490px; } }
   .hero .top-right-blue {
     position: absolute;
     top: 0;
@@ -105,6 +108,10 @@ main {
       .hero .top-right-blue {
         width: 26%;
         height: 100px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .hero .top-right-blue {
+        width: 30%;
+        height: 50px; } }
   .hero .bust {
     position: absolute;
     top: 0;
@@ -114,6 +121,12 @@ main {
     height: 70%;
     background: url("/images/bust_cut.jpg") no-repeat;
     background-size: 100% auto; }
+    @media (min-width: 0) and (max-width: 375px) {
+      .hero .bust {
+        width: 110%;
+        transform: translateX(34%);
+        background: url("/images/bust_cut_mobile.jpg") no-repeat;
+        background-size: 100% auto; } }
     .hero .bust .masked {
       width: 100%;
       height: 100%;
@@ -137,6 +150,10 @@ main {
           margin-top: 0;
           height: 45%;
           width: 150%; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .hero .bust .wave {
+          height: 40%;
+          max-height: 300px; } }
   .hero .title {
     margin-top: 180px; }
     @media (min-width: 0) and (max-width: 900px) {
@@ -145,6 +162,9 @@ main {
     @media (min-width: 0) and (max-width: 768px) {
       .hero .title {
         margin-top: 100px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .hero .title {
+        margin-top: 60px; } }
     .hero .title .top-left-blue {
       height: 400px;
       width: 26%; }
@@ -154,6 +174,10 @@ main {
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .top-left-blue {
           height: 200px; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .hero .title .top-left-blue {
+          height: 140px;
+          width: 28%; } }
     .hero .title .behind-title {
       position: absolute;
       left: 10%;
@@ -184,6 +208,11 @@ main {
           width: 14%;
           top: 160px;
           height: 40px; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .hero .title .small {
+          width: calc(16% - 2px);
+          top: 120px;
+          height: 40px; } }
     .hero .title .mid {
       width: 38%;
       height: 240px;
@@ -200,6 +229,11 @@ main {
         .hero .title .mid {
           top: 200px;
           width: 45%; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .hero .title .mid {
+          width: 28%;
+          top: 160px;
+          height: 60px; } }
     .hero .title .large {
       width: 90%;
       height: 20%;
@@ -214,6 +248,11 @@ main {
         .hero .title .large {
           top: 360px;
           width: 90%; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .hero .title .large {
+          top: 220px;
+          height: 280px;
+          padding-top: 120px; } }
       .hero .title .large .description {
         float: right;
         margin-top: 180px;
@@ -235,6 +274,13 @@ main {
             margin-top: 0;
             font-size: 18px;
             transform: translateY(-10%); } }
+        @media (min-width: 0) and (max-width: 375px) {
+          .hero .title .large .description {
+            font-size: 20px;
+            line-height: 22px;
+            width: 80%;
+            margin-right: 20px;
+            margin-top: 60px; } }
     .hero .title .title-text {
       position: absolute;
       top: 250px;
@@ -248,8 +294,14 @@ main {
         display: block; }
         .hero .title .title-text span:first-of-type {
           width: 25%; }
+          @media (min-width: 0) and (max-width: 375px) {
+            .hero .title .title-text span:first-of-type {
+              width: 40%; } }
         .hero .title .title-text span:nth-of-type(2) {
           width: 75%; }
+          @media (min-width: 0) and (max-width: 375px) {
+            .hero .title .title-text span:nth-of-type(2) {
+              width: 90%; } }
       @media (min-width: 0) and (max-width: 1330px) {
         .hero .title .title-text {
           font-size: 104px;
@@ -272,9 +324,18 @@ main {
           line-height: 70px;
           top: 130px;
           left: 13%; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .hero .title .title-text {
+          font-size: 46px;
+          line-height: 54px;
+          top: 164px;
+          left: 15%; } }
 
 .countdown {
   position: relative; }
+  @media (min-width: 0) and (max-width: 375px) {
+    .countdown {
+      height: 340px; } }
   .countdown .hand {
     display: inline-block;
     width: 50%;
@@ -286,6 +347,11 @@ main {
     @media (min-width: 0) and (max-width: 900px) {
       .countdown .hand {
         width: 60%; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .countdown .hand {
+        transform: rotate(-20deg) translate(-12%, -60px);
+        position: relative;
+        z-index: -1; } }
   .countdown .clock {
     display: inline-block;
     position: absolute;
@@ -300,6 +366,11 @@ main {
       .countdown .clock {
         top: -5%;
         width: 48%; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .countdown .clock {
+        top: 100px;
+        width: 70%;
+        right: 30px; } }
     .countdown .clock section {
       text-align: center;
       transform: translateX(-30%); }
@@ -347,6 +418,9 @@ main {
           @media (min-width: 0) and (max-width: 768px) {
             .countdown .clock section p .number {
               font-size: 90px; } }
+          @media (min-width: 0) and (max-width: 375px) {
+            .countdown .clock section p .number {
+              font-size: 60px; } }
         .countdown .clock section p .measure {
           font-size: 40px;
           text-transform: uppercase;
@@ -378,6 +452,9 @@ main {
         .countdown .clock .wave {
           top: -6vh;
           height: 40vh; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .countdown .clock .wave {
+          transform: translateX(50px); } }
 
 .cta {
   position: relative;
@@ -389,6 +466,9 @@ main {
   @media (min-width: 0) and (max-width: 900px) {
     .cta {
       padding-left: 15%; } }
+  @media (min-width: 0) and (max-width: 375px) {
+    .cta {
+      padding: 0 10%; } }
   .cta p {
     font-family: 'Cairo';
     font-size: 26px;
@@ -397,6 +477,10 @@ main {
     @media (min-width: 0) and (max-width: 1200px) {
       .cta p {
         font-size: 22px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .cta p {
+        font-size: 18px;
+        width: 100%; } }
   .cta form input:nth-of-type(-n + 2) {
     display: block;
     font-family: 'Cairo';
@@ -407,16 +491,25 @@ main {
     @media (min-width: 0) and (max-width: 1200px) {
       .cta form input:nth-of-type(-n + 2) {
         font-size: 22px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .cta form input:nth-of-type(-n + 2) {
+        font-size: 18px; } }
   .cta form .name {
     width: 415px; }
     @media (min-width: 0) and (max-width: 1200px) {
       .cta form .name {
         width: 300px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .cta form .name {
+        width: 100%; } }
   .cta form .contact {
     width: 325px; }
     @media (min-width: 0) and (max-width: 1200px) {
       .cta form .contact {
         width: 260px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .cta form .contact {
+        width: 95%; } }
   .cta form .submit {
     display: block;
     margin-left: 400px;
@@ -430,16 +523,22 @@ main {
     -webkit-box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.4);
     box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.4); }
-    @media (min-width: 0) and (max-width: 1200px) {
-      .cta form .submit {
-        position: relative;
-        top: -40px;
-        left: -60px; } }
     @media (min-width: 0) and (max-width: 1500px) {
       .cta form .submit {
         position: relative;
         top: -30px;
         left: -50px; } }
+    @media (min-width: 0) and (max-width: 1200px) {
+      .cta form .submit {
+        top: -40px;
+        left: -60px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .cta form .submit {
+        position: static;
+        width: 60%;
+        height: 60px;
+        margin: 20px 0 0 40%;
+        font-size: 28px; } }
     .cta form .submit:hover {
       background-color: #F0F0F0;
       transform: scale(1.05);
@@ -461,6 +560,9 @@ main {
     @media (min-width: 0) and (max-width: 768px) {
       .cta .wave {
         left: -680px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .cta .wave {
+        height: 350px; } }
 
 .keep-an-eye-out {
   position: relative;
@@ -505,6 +607,12 @@ main {
           width: 44%;
           font-size: 46px;
           line-height: 100px; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .keep-an-eye-out div:first-of-type {
+          width: 70%;
+          font-size: 40px;
+          padding: 0;
+          text-align: center; } }
     .keep-an-eye-out div:nth-of-type(2) {
       height: 60px;
       width: 52%;
@@ -521,6 +629,10 @@ main {
       @media (min-width: 0) and (max-width: 768px) {
         .keep-an-eye-out div:nth-of-type(2) {
           top: 100px; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .keep-an-eye-out div:nth-of-type(2) {
+          width: 80%;
+          height: 30px; } }
     .keep-an-eye-out div:last-of-type {
       height: 100px;
       width: 36%;
@@ -534,6 +646,9 @@ main {
       @media (min-width: 0) and (max-width: 768px) {
         .keep-an-eye-out div:last-of-type {
           top: 100px; } }
+      @media (min-width: 0) and (max-width: 375px) {
+        .keep-an-eye-out div:last-of-type {
+          width: 60%; } }
 
 .promo-video {
   transform: translateY(-100px);
@@ -547,6 +662,9 @@ main {
     .promo-video {
       transform: translateY(50px);
       height: 50%; } }
+  @media (min-width: 0) and (max-width: 375px) {
+    .promo-video {
+      height: 30%; } }
   .promo-video iframe {
     height: 100%; }
 
@@ -581,14 +699,22 @@ body {
         padding: 20px 30px; } }
     @media (min-width: 0) and (max-width: 768px) {
       .corner-logo img {
-        width: 120px;
-        padding: 20px 30px; } }
+        width: 120px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .corner-logo img {
+        width: 80px;
+        padding: 10px 15px; } }
   .corner-logo .red-line {
     background-color: transparent;
     border: solid 5px #C7161D;
     position: absolute;
     border-top: none;
     border-left: none; }
+    @media (min-width: 0) and (max-width: 375px) {
+      .corner-logo .red-line {
+        border: solid 3px #C7161D;
+        border-top: none;
+        border-left: none; } }
   .corner-logo .top-line {
     top: 0;
     left: 200px;
@@ -602,8 +728,13 @@ body {
     @media (min-width: 0) and (max-width: 768px) {
       .corner-logo .top-line {
         left: 120px;
-        width: calc(90% - 120px);
+        width: calc(90% - 100px);
         height: 40px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .corner-logo .top-line {
+        left: 80px;
+        width: calc(90% - 80px);
+        height: 22px; } }
   .corner-logo .corner-line {
     top: 57px;
     left: 100px;
@@ -618,9 +749,14 @@ body {
     @media (min-width: 0) and (max-width: 768px) {
       .corner-logo .corner-line {
         left: 60px;
-        top: 35px;
         width: 60px;
         height: 34px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .corner-logo .corner-line {
+        left: 26px;
+        top: 20px;
+        width: 56px;
+        height: 22px; } }
   .corner-logo .left-line {
     top: 118px;
     left: 0;
@@ -634,6 +770,11 @@ body {
       .corner-logo .left-line {
         width: 60px;
         top: 64px; } }
+    @media (min-width: 0) and (max-width: 375px) {
+      .corner-logo .left-line {
+        width: 29px;
+        top: 40px;
+        height: 100vh; } }
 
 .blue {
   background-color: #3BC0C7; }

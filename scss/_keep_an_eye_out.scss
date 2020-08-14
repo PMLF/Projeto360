@@ -19,7 +19,6 @@
         @include mq(0,768px){
             height:100px;
         }
-        
         &:first-of-type {
             font-size:96px;
             font-family:'Anton';
@@ -42,6 +41,12 @@
                 font-size:46px;
                 line-height:100px;
             }
+            @include mq(0,375px){
+                width:70%;
+                font-size:40px;
+                padding:0;
+                text-align:center;
+            }
         }
         &:nth-of-type(2) {
             height:60px;
@@ -59,6 +64,10 @@
             @include mq(0,768px){
                 top:100px;
             }
+            @include mq(0,375px){
+                width:80%;
+                height:30px;
+            }
         }
         &:last-of-type {
             height:100px;
@@ -72,6 +81,9 @@
             }
             @include mq(0,768px){
                 top:100px;
+            }
+            @include mq(0,375px){
+                width:60%
             }
         }
     }
