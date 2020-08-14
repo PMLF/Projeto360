@@ -11,22 +11,7 @@ $(document).ready(function(){
         else {
             $('.masked').addClass('hidden');
         }
-        //$('.pointer').addClass('hidden');
     });
-    /*
-    $('.hero').mouseout(function(e) {
-        $('.pointer').removeClass('hidden');
-    });
-    $('.title-text').mousemove(function(e) {
-    });
-    */
-    /*$
-    (window).scroll(function() {
-        let y = $('.masked').position().top;
-        console.log(y);
-        $('.masked').css('-webkit-mask-position-y', y + $(window).scrollTop()); 
-    });
-    */
 
     // Main title hover
     let mainTitleSpans = document.querySelectorAll('.title-text span');
@@ -71,4 +56,32 @@ $(document).ready(function(){
         document.querySelector(".minutes").innerHTML = timeMeasures[2];
         document.querySelector(".seconds").innerHTML = timeMeasures[3];
     }, 1000);
+
+    //CTA Form
+    document.querySelector(".submit").addEventListener('click',
+        function (e) {
+            let rule = /([a-zA-Z0-9][a-zA-Z0-9_\-\.]*@[a-zA-Z0-9\.]+[\.][a-zA-Z0-9]+)|((([00]|[+])351)?[0-9]{9})/;
+            if (rule.test(document.querySelector('.contact').value)
+                    && document.querySelector('.name').value != '') {
+                this.value = "OBRIGADO!";
+                document.querySelectorAll("input").forEach(element => {
+                    element.disabled = true;
+                });
+            }
+            else {
+                alert("Por favor preencha os campos corretamente antes de enviar o seu contacto.");
+            }
+        }
+    );
+
+    //Pointer
+    var pointer = document.querySelector(".pointer");
+
+    document.addEventListener("mousemove",
+        function (e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            pointer.style.left = x + "px";
+            pointer.style.top = y + "px";
+    });
 });
