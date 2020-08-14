@@ -6,7 +6,7 @@ $(document).ready(function(){
         let y = e.clientY;
         if (Math.round(window.innerWidth/window.innerHeight) == screenProportions) {
             $('.masked').css('-webkit-mask-position-x', x - (window.innerWidth/3));
-            $('.masked').css('-webkit-mask-position-y', y - 110);
+            $('.masked').css('-webkit-mask-position-y', y - (window.innerHeight * 0.05));
         }
         else {
             $('.masked').addClass('hidden');

@@ -9,6 +9,10 @@
     img {
         width:200px;
         padding:40px 50px;
+        @include mq(0,768px){
+            width:120px;
+            padding:20px 30px;
+        }
     }
     .red-line {
         background-color: transparent;
@@ -22,18 +26,32 @@
         left:200px;
         width:calc(90% - 180px);
         height:62px;
+        @include mq(0,768px){
+            left:120px;
+            width:calc(90% - 120px);
+            height:40px;
+        }
     }
     .corner-line {
         top:57px;
         left:100px;
         width:100px;
         height:66px;
-
+        @include mq(0,768px){
+            left:60px;
+            top:35px;
+            width:60px;
+            height:34px;
+        }
     }
     .left-line {
         top:118px;
         left:0;
         width:100px;
         height:140vh;
+        @include mq(0,768px){
+            width:60px;
+            top:64px;
+        }
     }
 }

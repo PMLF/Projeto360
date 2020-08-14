@@ -95,6 +95,10 @@ main {
     height: 120px;
     width: 16%;
     opacity: 0.65; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .hero .top-right-blue {
+        width: 26%;
+        height: 100px; } }
   .hero .bust {
     position: absolute;
     top: 0;
@@ -104,8 +108,12 @@ main {
     height: 70%;
     background: url("/images/bust_cut.jpg") no-repeat;
     background-size: 100% auto; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .hero .bust {
+        width: 68%; } }
     .hero .bust .masked {
       width: 100%;
+      height: 100%;
       transform: translateY(-90%);
       -webkit-mask-image: url("/images/mask.png");
       -webkit-mask-repeat: no-repeat;
@@ -121,17 +129,26 @@ main {
       margin-top: 20px;
       width: 100%;
       height: 70%; }
+      @media (min-width: 0) and (max-width: 768px) {
+        .hero .bust .wave {
+          margin-top: 0;
+          height: 45%;
+          width: 150%; } }
   .hero .title {
     margin-top: 180px; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .hero .title {
+        margin-top: 100px; } }
     .hero .title .top-left-blue {
       height: 400px;
       width: 26%; }
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .title .top-left-blue {
           width: 26%; } }
-      @media (min-width: 0) and (max-width: 900px) {
+      @media (min-width: 0) and (max-width: 768px) {
         .hero .title .top-left-blue {
-          width: 34%; } }
+          width: 32%;
+          height: 200px; } }
     .hero .title .behind-title {
       position: absolute;
       left: 10%;
@@ -148,21 +165,26 @@ main {
       top: 320px; }
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .title .small {
-          width: 14%; } }
+          width: 14%;
+          top: 250px; } }
       @media (min-width: 0) and (max-width: 900px) {
         .hero .title .small {
-          width: calc(20% + 1px); } }
+          width: 12%; } }
+      @media (min-width: 0) and (max-width: 768px) {
+        .hero .title .small {
+          top: 160px;
+          width: 18%; } }
     .hero .title .mid {
       width: 38%;
       height: 240px;
       top: 380px; }
       @media (min-width: 0) and (max-width: 1200px) {
         .hero .title .mid {
-          height: 200px;
-          width: 38%; } }
-      @media (min-width: 0) and (max-width: 900px) {
+          z-index: 0;
+          top: 310px; } }
+      @media (min-width: 0) and (max-width: 768px) {
         .hero .title .mid {
-          width: 48%; } }
+          top: 220px; } }
     .hero .title .large {
       width: 90%;
       height: 20%;
@@ -173,6 +195,9 @@ main {
           top: 518px;
           height: calc(100% - 600px);
           width: 88%; } }
+      @media (min-width: 0) and (max-width: 900px) {
+        .hero .title .large {
+          top: 420px; } }
       .hero .title .large .description {
         float: right;
         margin-top: 180px;
@@ -186,10 +211,11 @@ main {
             margin-right: 80px;
             font-size: 24px;
             line-height: 30px; } }
-        @media (min-width: 0) and (max-width: 900px) {
+        @media (min-width: 0) and (max-width: 768px) {
           .hero .title .large .description {
-            top: 620px;
-            font-size: 26px; } }
+            margin-top: 0;
+            font-size: 18px;
+            transform: translateY(-10%); } }
     .hero .title .title-text {
       position: absolute;
       top: 250px;
@@ -223,6 +249,13 @@ main {
           margin-left: 10px;
           top: 230px;
           left: 16%; } }
+      @media (min-width: 0) and (max-width: 768px) {
+        .hero .title .title-text {
+          font-size: 60px;
+          line-height: 80px;
+          margin-left: 10px;
+          top: 130px;
+          left: 14%; } }
 
 .countdown {
   position: relative; }
@@ -378,6 +411,11 @@ main {
         position: relative;
         top: -40px;
         left: -60px; } }
+    @media (min-width: 0) and (max-width: 1500px) {
+      .cta form .submit {
+        position: relative;
+        top: -30px;
+        left: -50px; } }
     .cta form .submit:hover {
       background-color: #F0F0F0;
       transform: scale(1.05);
@@ -415,18 +453,31 @@ main {
       text-transform: uppercase;
       line-height: 180px;
       padding: 0 50px; }
+      @media (min-width: 0) and (max-width: 1500px) {
+        .keep-an-eye-out div:first-of-type {
+          width: 35%;
+          font-size: 60px;
+          line-height: 140px; } }
       @media (min-width: 0) and (max-width: 1200px) {
         .keep-an-eye-out div:first-of-type {
-          font-size: 60px;
-          line-height: 160px; } }
+          width: 50%; } }
     .keep-an-eye-out div:nth-of-type(2) {
       height: 60px;
       width: 52%;
       top: 150px; }
+      @media (min-width: 0) and (max-width: 1500px) {
+        .keep-an-eye-out div:nth-of-type(2) {
+          width: 46%; } }
+      @media (min-width: 0) and (max-width: 1200px) {
+        .keep-an-eye-out div:nth-of-type(2) {
+          width: 60%; } }
     .keep-an-eye-out div:last-of-type {
       height: 100px;
       width: 36%;
       top: 210px; }
+      @media (min-width: 0) and (max-width: 1500px) {
+        .keep-an-eye-out div:last-of-type {
+          width: 40%; } }
 
 .promo-video {
   transform: translateY(-100px);
@@ -464,6 +515,10 @@ body {
   .corner-logo img {
     width: 200px;
     padding: 40px 50px; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .corner-logo img {
+        width: 120px;
+        padding: 20px 30px; } }
   .corner-logo .red-line {
     background-color: transparent;
     border: solid 5px #C7161D;
@@ -475,16 +530,31 @@ body {
     left: 200px;
     width: calc(90% - 180px);
     height: 62px; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .corner-logo .top-line {
+        left: 120px;
+        width: calc(90% - 120px);
+        height: 40px; } }
   .corner-logo .corner-line {
     top: 57px;
     left: 100px;
     width: 100px;
     height: 66px; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .corner-logo .corner-line {
+        left: 60px;
+        top: 35px;
+        width: 60px;
+        height: 34px; } }
   .corner-logo .left-line {
     top: 118px;
     left: 0;
     width: 100px;
     height: 140vh; }
+    @media (min-width: 0) and (max-width: 768px) {
+      .corner-logo .left-line {
+        width: 60px;
+        top: 64px; } }
 
 .blue {
   background-color: #3BC0C7; }

@@ -17,20 +17,33 @@
             text-transform:uppercase;
             line-height:180px;
             padding:0 50px;
-            @include mq(0,1200px){
+            @include mq(0,1500px){
+                width:35%;
                 font-size:60px;
-                line-height:160px;
+                line-height:140px;
+            }
+            @include mq(0,1200px){
+                width:50%;
             }
         }
         &:nth-of-type(2) {
             height:60px;
             width:52%;
             top:150px;
+            @include mq(0,1500px){
+                width:46%;
+            }
+            @include mq(0,1200px){
+                width:60%;
+            }
         }
         &:last-of-type {
             height:100px;
             width:36%;
             top:210px;
+            @include mq(0,1500px){
+                width:40%;
+            }
         }
     }
 }
